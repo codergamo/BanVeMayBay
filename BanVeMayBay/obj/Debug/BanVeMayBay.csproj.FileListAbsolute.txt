@@ -1,0 +1,13 @@
+E:\IT 4-4 Year\HK1 - Năm 3\DBMS\BanVeMayBay\BanVeMayBay\bin\Debug\BanVeMayBay.exe.config
+E:\IT 4-4 Year\HK1 - Năm 3\DBMS\BanVeMayBay\BanVeMayBay\bin\Debug\BanVeMayBay.exe
+E:\IT 4-4 Year\HK1 - Năm 3\DBMS\BanVeMayBay\BanVeMayBay\bin\Debug\BanVeMayBay.pdb
+E:\IT 4-4 Year\HK1 - Năm 3\DBMS\BanVeMayBay\BanVeMayBay\bin\Debug\Guna.UI2.dll
+E:\IT 4-4 Year\HK1 - Năm 3\DBMS\BanVeMayBay\BanVeMayBay\obj\Debug\BanVeMayBay.csproj.AssemblyReference.cache
+E:\IT 4-4 Year\HK1 - Năm 3\DBMS\BanVeMayBay\BanVeMayBay\obj\Debug\BanVeMayBay.csproj.SuggestedBindingRedirects.cache
+E:\IT 4-4 Year\HK1 - Năm 3\DBMS\BanVeMayBay\BanVeMayBay\obj\Debug\BanVeMayBay.frm_DangNhap.resources
+E:\IT 4-4 Year\HK1 - Năm 3\DBMS\BanVeMayBay\BanVeMayBay\obj\Debug\BanVeMayBay.Properties.Resources.resources
+E:\IT 4-4 Year\HK1 - Năm 3\DBMS\BanVeMayBay\BanVeMayBay\obj\Debug\BanVeMayBay.csproj.GenerateResource.cache
+E:\IT 4-4 Year\HK1 - Năm 3\DBMS\BanVeMayBay\BanVeMayBay\obj\Debug\BanVeMayBay.csproj.CoreCompileInputs.cache
+E:\IT 4-4 Year\HK1 - Năm 3\DBMS\BanVeMayBay\BanVeMayBay\obj\Debug\BanVeMayBay.csproj.CopyComplete
+E:\IT 4-4 Year\HK1 - Năm 3\DBMS\BanVeMayBay\BanVeMayBay\obj\Debug\BanVeMayBay.exe
+E:\IT 4-4 Year\HK1 - Năm 3\DBMS\BanVeMayBay\BanVeMayBay\obj\Debug\BanVeMayBay.pdb
