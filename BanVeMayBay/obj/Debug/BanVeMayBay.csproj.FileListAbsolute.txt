@@ -11,3 +11,16 @@ E:\IT 4-4 Year\HK1 - Năm 3\DBMS\BanVeMayBay\BanVeMayBay\obj\Debug\BanVeMayBay.c
 E:\IT 4-4 Year\HK1 - Năm 3\DBMS\BanVeMayBay\BanVeMayBay\obj\Debug\BanVeMayBay.csproj.CopyComplete
 E:\IT 4-4 Year\HK1 - Năm 3\DBMS\BanVeMayBay\BanVeMayBay\obj\Debug\BanVeMayBay.exe
 E:\IT 4-4 Year\HK1 - Năm 3\DBMS\BanVeMayBay\BanVeMayBay\obj\Debug\BanVeMayBay.pdb
+C:\Users\Acer\Source\Repos\BanVeMayBay\BanVeMayBay\bin\Debug\BanVeMayBay.exe.config
+C:\Users\Acer\Source\Repos\BanVeMayBay\BanVeMayBay\bin\Debug\BanVeMayBay.exe
+C:\Users\Acer\Source\Repos\BanVeMayBay\BanVeMayBay\bin\Debug\BanVeMayBay.pdb
+C:\Users\Acer\Source\Repos\BanVeMayBay\BanVeMayBay\bin\Debug\Guna.UI2.dll
+C:\Users\Acer\Source\Repos\BanVeMayBay\BanVeMayBay\obj\Debug\BanVeMayBay.csproj.AssemblyReference.cache
+C:\Users\Acer\Source\Repos\BanVeMayBay\BanVeMayBay\obj\Debug\BanVeMayBay.csproj.SuggestedBindingRedirects.cache
+C:\Users\Acer\Source\Repos\BanVeMayBay\BanVeMayBay\obj\Debug\BanVeMayBay.frm_DangNhap.resources
+C:\Users\Acer\Source\Repos\BanVeMayBay\BanVeMayBay\obj\Debug\BanVeMayBay.Properties.Resources.resources
+C:\Users\Acer\Source\Repos\BanVeMayBay\BanVeMayBay\obj\Debug\BanVeMayBay.csproj.GenerateResource.cache
+C:\Users\Acer\Source\Repos\BanVeMayBay\BanVeMayBay\obj\Debug\BanVeMayBay.csproj.CoreCompileInputs.cache
+C:\Users\Acer\Source\Repos\BanVeMayBay\BanVeMayBay\obj\Debug\BanVeMayBay.csproj.CopyComplete
+C:\Users\Acer\Source\Repos\BanVeMayBay\BanVeMayBay\obj\Debug\BanVeMayBay.exe
+C:\Users\Acer\Source\Repos\BanVeMayBay\BanVeMayBay\obj\Debug\BanVeMayBay.pdb

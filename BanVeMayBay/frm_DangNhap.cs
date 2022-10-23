@@ -19,7 +19,7 @@ namespace BanVeMayBay
 
         private void frm_DangNhap_Load(object sender, EventArgs e)
         {
-
+            //abc
         }
 
         private void btn_Minimum_Click(object sender, EventArgs e)
