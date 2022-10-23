@@ -127,7 +127,7 @@
             this.txt_Password.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txt_Password.FillColor = System.Drawing.Color.Black;
             this.txt_Password.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_Password.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_Password.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.txt_Password.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_Password.Location = new System.Drawing.Point(52, 141);
             this.txt_Password.Name = "txt_Password";
@@ -149,7 +149,7 @@
             this.txt_Username.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txt_Username.FillColor = System.Drawing.Color.Black;
             this.txt_Username.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_Username.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_Username.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.txt_Username.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_Username.Location = new System.Drawing.Point(52, 96);
             this.txt_Username.Name = "txt_Username";
@@ -262,9 +262,9 @@
             this.txt_RetypePassword.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txt_RetypePassword.FillColor = System.Drawing.Color.Black;
             this.txt_RetypePassword.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_RetypePassword.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_RetypePassword.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.txt_RetypePassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_RetypePassword.Location = new System.Drawing.Point(52, 161);
+            this.txt_RetypePassword.Location = new System.Drawing.Point(52, 160);
             this.txt_RetypePassword.Name = "txt_RetypePassword";
             this.txt_RetypePassword.PasswordChar = '*';
             this.txt_RetypePassword.PlaceholderText = "Retype Your Password";
@@ -280,7 +280,7 @@
             this.btn_SetPassword.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btn_SetPassword.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btn_SetPassword.FillColor = System.Drawing.Color.Silver;
-            this.btn_SetPassword.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_SetPassword.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.btn_SetPassword.ForeColor = System.Drawing.Color.Black;
             this.btn_SetPassword.Location = new System.Drawing.Point(77, 212);
             this.btn_SetPassword.Name = "btn_SetPassword";
@@ -301,9 +301,9 @@
             this.txt_NewPassword.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txt_NewPassword.FillColor = System.Drawing.Color.Black;
             this.txt_NewPassword.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_NewPassword.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_NewPassword.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.txt_NewPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_NewPassword.Location = new System.Drawing.Point(52, 116);
+            this.txt_NewPassword.Location = new System.Drawing.Point(52, 115);
             this.txt_NewPassword.Name = "txt_NewPassword";
             this.txt_NewPassword.PasswordChar = '*';
             this.txt_NewPassword.PlaceholderText = "Enter New Password";
@@ -324,7 +324,7 @@
             this.txt_UserSetPass.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txt_UserSetPass.FillColor = System.Drawing.Color.Black;
             this.txt_UserSetPass.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_UserSetPass.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_UserSetPass.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.txt_UserSetPass.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_UserSetPass.Location = new System.Drawing.Point(52, 70);
             this.txt_UserSetPass.Name = "txt_UserSetPass";
