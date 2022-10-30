@@ -42,5 +42,12 @@ namespace BanVeMayBay
             pnl_ResetPassword.Visible = false;
             pnl_Login.Visible = true;
         }
+
+        private void btn_Login_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frm_Menu frm_Menu = new frm_Menu();
+            frm_Menu.ShowDialog();
+        }
     }
 }
