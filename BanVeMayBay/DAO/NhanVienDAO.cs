@@ -35,7 +35,7 @@ namespace DAO
         }
         public void XoaNV(String maNV)
         {
-            const string sql = "delete from NHAN_VIEN where MaNV = @MaNV";
+            const string sql = "delete from NHANVIEN where MaNV = @MaNV";
             SqlParameter[] sqlParameters = new SqlParameter[1];
             sqlParameters[0] = new SqlParameter("@MaNV", SqlDbType.NVarChar);
             sqlParameters[0].Value = Convert.ToString(maNV);

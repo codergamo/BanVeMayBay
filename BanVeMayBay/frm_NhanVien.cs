@@ -33,7 +33,7 @@ namespace BanVeMayBay
             dgvNV.Columns[5].HeaderText = "Số điện thoại";
             dgvNV.Columns[6].HeaderText = "Địa chỉ";
 
-            dgvNV.Columns[0].Width = 150;
+            dgvNV.Columns[0].Width = 170;
             dgvNV.Columns[1].Width = 150;
             dgvNV.Columns[2].Width = 250;
             dgvNV.Columns[3].Width = 100;
@@ -61,6 +61,25 @@ namespace BanVeMayBay
         {
             if (!Char.IsDigit(e.KeyChar) && !Char.IsControl(e.KeyChar))
                 e.Handled = true;
+        }
+
+        private void btn_Xoa_Click(object sender, EventArgs e)
+        {
+            NhanVienBUS nhanVienBUS = new NhanVienBUS();
+            NhanVien nv = new NhanVien();
+            nv.Manv = dgvNV.CurrentRow.Cells[0].Value.ToString();
+            nhanVienBUS.XoaNV(nv.Manv);
+            XemNhanVien();
+        }
+
+        private void dgvNV_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+
+        }
+
+        private void dgvNV_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
