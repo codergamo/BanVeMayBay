@@ -91,6 +91,15 @@ namespace BanVeMayBay.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Data Source=DESKTOP-INR2D5K\XUANHUY;Initial Catalog=QUANLYCHUYENBAY;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False.
+        /// </summary>
+        internal static string cnnstr {
+            get {
+                return ResourceManager.GetString("cnnstr", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap cross {

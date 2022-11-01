@@ -48,6 +48,7 @@ namespace BanVeMayBay
             this.Hide();
             frm_Menu frm_Menu = new frm_Menu();
             frm_Menu.ShowDialog();
+            this.Show();
         }
     }
 }
