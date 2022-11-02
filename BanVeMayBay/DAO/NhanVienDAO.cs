@@ -15,7 +15,7 @@ namespace DAO
         public NhanVienDAO() : base() { }
         public void ThemNV(NhanVien nv)
         {
-            const string sql = "insert into NHANVIEN values(@MaNV, @CMND, @TenNV, @GioiTinh, @NgaySinh, @SDT, @DiaChi)";
+            const string sql = "ThemNV";
             SqlParameter[] sqlParameters = new SqlParameter[7];
             sqlParameters[0] = new SqlParameter("@MaNV", SqlDbType.NVarChar);
             sqlParameters[0].Value = Convert.ToString(nv.Manv);

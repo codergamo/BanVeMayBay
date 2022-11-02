@@ -31,7 +31,7 @@ namespace DAO
         {
             using (SqlCommand sqlCommand = new SqlCommand(query, openConnection()))
             {
-                sqlCommand.CommandType = CommandType.Text;
+                sqlCommand.CommandType = CommandType.StoredProcedure;
                 sqlCommand.Parameters.AddRange(sqlParameter);
                 try
                 {

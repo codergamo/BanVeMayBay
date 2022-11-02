@@ -19,7 +19,15 @@ namespace BanVeMayBay
         {
             InitializeComponent();
         }
-        public void XemNhanVien()
+        private string RandomString() {
+            string str = "NV-";
+            Random r = new Random();
+            for (int i = 0; i < 7; i++) {
+                str += r.Next(1, 9);
+            }
+            return str;
+        }
+        private void XemNhanVien()
         {
             NhanVienBUS nvBUS = new NhanVienBUS();
             DataTable dt = new DataTable();
@@ -46,6 +54,7 @@ namespace BanVeMayBay
 
         private void frm_NhanVien_Load(object sender, EventArgs e)
         {
+            txt_MaNV.Text = RandomString();
             XemNhanVien();
         }
 
@@ -54,7 +63,11 @@ namespace BanVeMayBay
             NhanVienBUS nvBUS = new NhanVienBUS();
             NhanVien nv = new NhanVien(txt_MaNV.Text, txt_CMND.Text, txt_TenNV.Text, cb_GioiTinh.Text, txt_SDT.Text, txt_DiaChi.Text, dtp_NgaySinh.Value);
             nvBUS.ThemNV(nv);
-            XemNhanVien();
+            frm_NhanVien_Load(sender,e);
+            txt_CMND.Text = "";
+            txt_DiaChi.Text = "";
+            txt_SDT.Text = "";
+            txt_TenNV.Text = "";
         }
 
         private void txt_CMND_KeyPress(object sender, KeyPressEventArgs e)
@@ -72,14 +85,10 @@ namespace BanVeMayBay
             XemNhanVien();
         }
 
-        private void dgvNV_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        private void txt_SDT_KeyPress(object sender, KeyPressEventArgs e)
         {
-
-        }
-
-        private void dgvNV_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-
+            if (!Char.IsDigit(e.KeyChar) && !Char.IsControl(e.KeyChar))
+                e.Handled = true;
         }
     }
 }
