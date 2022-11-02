@@ -32,5 +32,9 @@ namespace BUS
         {
             return nvDAO.HienThi();
         }
+        public DataTable Search(string str)
+        {
+            return nvDAO.Search(str);
+        }
     }
 }

@@ -95,5 +95,28 @@ namespace DAO
                 return dt;
             }
         }
+        public DataTable executeSearchQuery(String query, SqlParameter[] sqlParameter)
+        {
+            using (SqlCommand sqlCommand = new SqlCommand(query, openConnection()))
+            {
+                DataTable dt = new DataTable();
+                try
+                {
+                    sqlCommand.Parameters.AddRange(sqlParameter);
+                    SqlDataAdapter da = new SqlDataAdapter(sqlCommand);
+                    da.Fill(dt);
+                    sqlCommand.ExecuteNonQuery();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                finally
+                {
+                    connection.Close();
+                }
+                return dt;
+            }
+        }
     }
 }

@@ -66,5 +66,13 @@ namespace DAO
             const string sql = "select * from NHANVIEN";
             return executeDisplayQuery(sql);
         }
+        public DataTable Search(string str)
+        {
+            string sql = "select * from TimKiem_NV(@str)";
+            SqlParameter[] sqlParameters = new SqlParameter[1];
+            sqlParameters[0] = new SqlParameter("@str", SqlDbType.NVarChar);
+            sqlParameters[0].Value = Convert.ToString(str);
+            return executeSearchQuery(sql,sqlParameters);
+        }
     }
 }
