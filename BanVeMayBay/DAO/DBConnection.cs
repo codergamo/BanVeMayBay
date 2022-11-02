@@ -51,6 +51,7 @@ namespace DAO
         {
             using (SqlCommand sqlCommand = new SqlCommand(query, openConnection()))
             {
+                sqlCommand.CommandType = CommandType.StoredProcedure;
                 int i = 0;
                 while (i < sqlParameter.Length)
                 {
