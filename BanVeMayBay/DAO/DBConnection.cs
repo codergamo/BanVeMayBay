@@ -52,6 +52,7 @@ namespace DAO
             using (SqlCommand sqlCommand = new SqlCommand(query, openConnection()))
             {
                 sqlCommand.CommandType = CommandType.StoredProcedure;
+                openConnection().InfoMessage += Cnn_infomessage;
                 int i = 0;
                 while (i < sqlParameter.Length)
                 {
@@ -103,6 +104,7 @@ namespace DAO
                 try
                 {
                     sqlCommand.Parameters.AddRange(sqlParameter);
+                    
                     SqlDataAdapter da = new SqlDataAdapter(sqlCommand);
                     da.Fill(dt);
                     sqlCommand.ExecuteNonQuery();
@@ -117,6 +119,10 @@ namespace DAO
                 }
                 return dt;
             }
+        }
+        private void Cnn_infomessage(object sender, SqlInfoMessageEventArgs e)
+        {
+            MessageBox.Show(e.Message);
         }
     }
 }
