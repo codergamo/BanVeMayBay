@@ -45,6 +45,7 @@ namespace BanVeMayBay
 
         private void btn_Login_Click(object sender, EventArgs e)
         {
+
             this.Hide();
             frm_Menu frm_Menu = new frm_Menu();
             frm_Menu.ShowDialog();
