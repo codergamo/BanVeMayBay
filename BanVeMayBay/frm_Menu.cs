@@ -20,8 +20,10 @@ namespace BanVeMayBay
         {
             btn_Home.Visible = true;
             btn_BanVe.BackColor = Color.FromArgb(102, 165, 173);
-            btn_DanhSachVe.BackColor = Color.FromArgb(102, 165, 173);
+            btn_DanhSach.BackColor = Color.FromArgb(102, 165, 173);
             btn_ChuyenBay.BackColor = Color.FromArgb(102, 165, 173);
+            btn_TuyenBay.BackColor = Color.FromArgb(102, 165, 173);
+            btn_MayBay.BackColor = Color.FromArgb(102, 165, 173);
             btn_NhanVien.BackColor = Color.FromArgb(102, 165, 173);
             btn_KhachHang.BackColor = Color.FromArgb(102, 165, 173);
             btn_ThongKe.BackColor = Color.FromArgb(102, 165, 173);
@@ -36,12 +38,13 @@ namespace BanVeMayBay
             else
             {
                 btn.BackColor = Color.FromArgb(196, 223, 230);
-                pnl_Top.BackColor = Color.FromArgb(196, 223, 230);       
+                pnl_Top.BackColor = Color.FromArgb(196, 223, 230);
             }
             lb_TopName.Text = topname;
         }
         void AddForm(Form f)
         {
+            ms_DanhSach.Visible = false;
             this.pnl_Main.Controls.Clear();
             f.TopLevel = false;
             f.AutoScroll = true;
@@ -53,16 +56,69 @@ namespace BanVeMayBay
         private void btn_BanVe_Click(object sender, EventArgs e)
         {
             EditButtonColor(btn_BanVe, "BÁN VÉ");
+            frm_BanVe frmBV = new frm_BanVe();
+            AddForm(frmBV);
         }
 
-        private void btn_DanhSachVe_Click(object sender, EventArgs e)
+        private void btn_DanhSach_Click(object sender, EventArgs e)
         {
-            EditButtonColor(btn_DanhSachVe, "DANH SÁCH VÉ");
+            EditButtonColor(btn_DanhSach, "DANH SÁCH HÓA ĐƠN");
+            frm_DSHoaDon frmHD = new frm_DSHoaDon();
+            AddForm(frmHD);
+            ms_DanhSach.Visible = true;
+        }
+
+        private void ms_DanhSachHD_Click(object sender, EventArgs e)
+        {
+            lb_TopName.Text = "DANH SÁCH HÓA ĐƠN";
+            frm_DSHoaDon frmHD = new frm_DSHoaDon();
+            AddForm(frmHD);
+            ms_DanhSach.Visible = true;
+        }
+
+        private void ms_DanhSachPDC_Click(object sender, EventArgs e)
+        {
+            lb_TopName.Text = "DANH SÁCH PHIẾU ĐẶT CHỖ";
+            frm_DSPhieuDatCho frmPDC = new frm_DSPhieuDatCho();
+            AddForm(frmPDC);
+            ms_DanhSach.Visible = true;
+        }
+
+        private void ms_DanhSachVe_Click(object sender, EventArgs e)
+        {
+            lb_TopName.Text = "DANH SÁCH VÉ";
+            frm_DSVe frmDSV = new frm_DSVe();
+            AddForm(frmDSV);
+            ms_DanhSach.Visible = true;
+        }
+
+        private void ms_DanhSachHangVe_Click(object sender, EventArgs e)
+        {
+            lb_TopName.Text = "DANH SÁCH HẠNG VÉ";
+            frm_DSHangVe frmHV = new frm_DSHangVe();
+            AddForm(frmHV);
+            ms_DanhSach.Visible = true;
         }
 
         private void btn_ChuyenBay_Click(object sender, EventArgs e)
         {
             EditButtonColor(btn_ChuyenBay, "CHUYẾN BAY");
+            frm_ChuyenBay frmCB = new frm_ChuyenBay();
+            AddForm(frmCB);
+        }
+
+        private void btn_MayBay_Click(object sender, EventArgs e)
+        {
+            EditButtonColor(btn_MayBay, "MÁY BAY");
+            frm_MayBay frmMB = new frm_MayBay();
+            AddForm(frmMB);
+        }
+
+        private void btn_TuyenBay_Click(object sender, EventArgs e)
+        {
+            EditButtonColor(btn_TuyenBay, "TUYẾN BAY");
+            frm_TuyenBay frmTB = new frm_TuyenBay();
+            AddForm(frmTB);
         }
 
         private void btn_NhanVien_Click(object sender, EventArgs e)
@@ -82,11 +138,15 @@ namespace BanVeMayBay
         private void btn_ThongKe_Click(object sender, EventArgs e)
         {
             EditButtonColor(btn_ThongKe, "THỐNG KÊ");
+            frm_ThongKe frmTK = new frm_ThongKe();
+            AddForm(frmTK);
         }
 
         private void btn_DoiMatKhau_Click(object sender, EventArgs e)
         {
             EditButtonColor(btn_DoiMatKhau, "ĐỔI MẬT KHẨU");
+            frm_DoiMatKhau frmDMK = new frm_DoiMatKhau();
+            AddForm(frmDMK);
         }
 
         private void btn_Thoat_Click(object sender, EventArgs e)
@@ -98,21 +158,19 @@ namespace BanVeMayBay
                 this.Close();
             }
         }
+
         private void btn_Home_Click(object sender, EventArgs e)
         {
             EditButtonColor(btn_Home, "TRANG CHỦ");
             btn_Home.Visible = false;
+            ms_DanhSach.Visible = false;
             this.pnl_Main.Controls.Clear();
         }
 
         private void frm_Menu_Load(object sender, EventArgs e)
         {
             btn_Home.Visible = false;
-        }
-
-        private void pnl_Main_Paint(object sender, PaintEventArgs e)
-        {
-
+            ms_DanhSach.Visible = false;
         }
     }
 }

@@ -40,3 +40,12 @@ E:\Github\BanVeMayBay\BanVeMayBay\obj\Debug\BanVeMayBay.pdb
 E:\Github\BanVeMayBay\BanVeMayBay\obj\Debug\BanVeMayBay.frm_KhachHang.resources
 E:\Github\BanVeMayBay\BanVeMayBay\obj\Debug\BanVeMayBay.frm_Menu.resources
 E:\Github\BanVeMayBay\BanVeMayBay\obj\Debug\BanVeMayBay.frm_NhanVien.resources
+E:\Github\BanVeMayBay\BanVeMayBay\obj\Debug\BanVeMayBay.frm_BanVe.resources
+E:\Github\BanVeMayBay\BanVeMayBay\obj\Debug\BanVeMayBay.frm_ChuyenBay.resources
+E:\Github\BanVeMayBay\BanVeMayBay\obj\Debug\BanVeMayBay.frm_DoiMatKhau.resources
+E:\Github\BanVeMayBay\BanVeMayBay\obj\Debug\BanVeMayBay.frm_DSHangVe.resources
+E:\Github\BanVeMayBay\BanVeMayBay\obj\Debug\BanVeMayBay.frm_DSHoaDon.resources
+E:\Github\BanVeMayBay\BanVeMayBay\obj\Debug\BanVeMayBay.frm_DSPhieuDatCho.resources
+E:\Github\BanVeMayBay\BanVeMayBay\obj\Debug\BanVeMayBay.frm_DSVe.resources
+E:\Github\BanVeMayBay\BanVeMayBay\obj\Debug\BanVeMayBay.frm_MayBay.resources
+E:\Github\BanVeMayBay\BanVeMayBay\obj\Debug\BanVeMayBay.frm_TuyenBay.resources
