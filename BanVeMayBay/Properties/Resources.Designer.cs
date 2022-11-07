@@ -142,6 +142,16 @@ namespace BanVeMayBay.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Met_het_vliegtuig_op_vakantie {
+            get {
+                object obj = ResourceManager.GetObject("Met-het-vliegtuig-op-vakantie", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap minus {
             get {
                 object obj = ResourceManager.GetObject("minus", resourceCulture);
@@ -165,6 +175,16 @@ namespace BanVeMayBay.Properties {
         internal static System.Drawing.Bitmap plane_alt {
             get {
                 object obj = ResourceManager.GetObject("plane_alt", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap rocket_lunch {
+            get {
+                object obj = ResourceManager.GetObject("rocket-lunch", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -202,6 +222,16 @@ namespace BanVeMayBay.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap unlock {
+            get {
+                object obj = ResourceManager.GetObject("unlock", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap user {
             get {
                 object obj = ResourceManager.GetObject("user", resourceCulture);
@@ -225,6 +255,16 @@ namespace BanVeMayBay.Properties {
         internal static System.Drawing.Bitmap users_alt1 {
             get {
                 object obj = ResourceManager.GetObject("users_alt1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap world {
+            get {
+                object obj = ResourceManager.GetObject("world", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -28,14 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgvNV = new Guna.UI2.WinForms.Guna2DataGridView();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.pnl_ThongTinNV = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.guna2HtmlLabel8 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.dtp_NgaySinh = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.cb_GioiTinh = new Guna.UI2.WinForms.Guna2ComboBox();
             this.txt_DiaChi = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -54,6 +53,7 @@
             this.btn_Them = new Guna.UI2.WinForms.Guna2Button();
             this.txt_Search = new Guna.UI2.WinForms.Guna2TextBox();
             this.btn_TimKiem = new Guna.UI2.WinForms.Guna2Button();
+            this.dtp_NgaySinh = new Guna.UI2.WinForms.Guna2DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNV)).BeginInit();
             this.guna2Panel1.SuspendLayout();
             this.pnl_ThongTinNV.SuspendLayout();
@@ -61,26 +61,26 @@
             // 
             // dgvNV
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.dgvNV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvNV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.dgvNV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvNV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvNV.ColumnHeadersHeight = 25;
             this.dgvNV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvNV.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvNV.DefaultCellStyle = dataGridViewCellStyle6;
             this.dgvNV.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvNV.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvNV.Location = new System.Drawing.Point(0, 0);
@@ -145,7 +145,7 @@
             this.pnl_ThongTinNV.Margin = new System.Windows.Forms.Padding(2);
             this.pnl_ThongTinNV.Name = "pnl_ThongTinNV";
             this.pnl_ThongTinNV.Size = new System.Drawing.Size(406, 271);
-            this.pnl_ThongTinNV.TabIndex = 2;
+            this.pnl_ThongTinNV.TabIndex = 16;
             this.pnl_ThongTinNV.Paint += new System.Windows.Forms.PaintEventHandler(this.pnl_ThongTinNV_Paint);
             // 
             // guna2HtmlLabel8
@@ -159,25 +159,6 @@
             this.guna2HtmlLabel8.Size = new System.Drawing.Size(239, 32);
             this.guna2HtmlLabel8.TabIndex = 16;
             this.guna2HtmlLabel8.Text = "Thông tin nhân viên";
-            // 
-            // dtp_NgaySinh
-            // 
-            this.dtp_NgaySinh.AutoRoundedCorners = true;
-            this.dtp_NgaySinh.BackColor = System.Drawing.Color.Transparent;
-            this.dtp_NgaySinh.BorderRadius = 11;
-            this.dtp_NgaySinh.Checked = true;
-            this.dtp_NgaySinh.FillColor = System.Drawing.Color.White;
-            this.dtp_NgaySinh.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.dtp_NgaySinh.ForeColor = System.Drawing.Color.Black;
-            this.dtp_NgaySinh.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtp_NgaySinh.Location = new System.Drawing.Point(172, 170);
-            this.dtp_NgaySinh.Margin = new System.Windows.Forms.Padding(2);
-            this.dtp_NgaySinh.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.dtp_NgaySinh.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.dtp_NgaySinh.Name = "dtp_NgaySinh";
-            this.dtp_NgaySinh.Size = new System.Drawing.Size(203, 24);
-            this.dtp_NgaySinh.TabIndex = 3;
-            this.dtp_NgaySinh.Value = new System.DateTime(2022, 10, 26, 13, 48, 11, 128);
             // 
             // cb_GioiTinh
             // 
@@ -402,7 +383,7 @@
             this.txt_MaNV.PlaceholderText = "";
             this.txt_MaNV.SelectedText = "";
             this.txt_MaNV.Size = new System.Drawing.Size(203, 24);
-            this.txt_MaNV.TabIndex = 1;
+            this.txt_MaNV.TabIndex = 15;
             // 
             // guna2HtmlLabel1
             // 
@@ -527,6 +508,25 @@
             this.btn_TimKiem.Text = "Tìm kiếm";
             this.btn_TimKiem.Click += new System.EventHandler(this.btn_TimKiem_Click);
             // 
+            // dtp_NgaySinh
+            // 
+            this.dtp_NgaySinh.AutoRoundedCorners = true;
+            this.dtp_NgaySinh.BackColor = System.Drawing.Color.Transparent;
+            this.dtp_NgaySinh.BorderRadius = 11;
+            this.dtp_NgaySinh.Checked = true;
+            this.dtp_NgaySinh.FillColor = System.Drawing.Color.White;
+            this.dtp_NgaySinh.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.dtp_NgaySinh.ForeColor = System.Drawing.Color.Black;
+            this.dtp_NgaySinh.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtp_NgaySinh.Location = new System.Drawing.Point(172, 170);
+            this.dtp_NgaySinh.Margin = new System.Windows.Forms.Padding(2);
+            this.dtp_NgaySinh.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.dtp_NgaySinh.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.dtp_NgaySinh.Name = "dtp_NgaySinh";
+            this.dtp_NgaySinh.Size = new System.Drawing.Size(203, 24);
+            this.dtp_NgaySinh.TabIndex = 3;
+            this.dtp_NgaySinh.Value = new System.DateTime(2022, 10, 26, 13, 48, 11, 128);
+            // 
             // frm_NhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -539,6 +539,7 @@
             this.Controls.Add(this.btn_Them);
             this.Controls.Add(this.pnl_ThongTinNV);
             this.Controls.Add(this.guna2Panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frm_NhanVien";
             this.Text = "frm_NhanVien";
@@ -567,7 +568,6 @@
         private Guna.UI2.WinForms.Guna2TextBox txt_SDT;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel6;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel7;
-        private Guna.UI2.WinForms.Guna2DateTimePicker dtp_NgaySinh;
         private Guna.UI2.WinForms.Guna2ComboBox cb_GioiTinh;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel8;
         private Guna.UI2.WinForms.Guna2Button btn_Them;
@@ -575,5 +575,6 @@
         private Guna.UI2.WinForms.Guna2Button btn_Sua;
         private Guna.UI2.WinForms.Guna2TextBox txt_Search;
         private Guna.UI2.WinForms.Guna2Button btn_TimKiem;
+        private Guna.UI2.WinForms.Guna2DateTimePicker dtp_NgaySinh;
     }
 }

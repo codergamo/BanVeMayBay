@@ -55,17 +55,65 @@
     <Compile Include="DAO\NhanVienDAO.cs" />
     <Compile Include="DTO\NhanVien.cs" />
     <Compile Include="DTO\TaiKhoan.cs" />
+    <Compile Include="frm_BanVe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_BanVe.designer.cs">
+      <DependentUpon>frm_BanVe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ChuyenBay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_ChuyenBay.designer.cs">
+      <DependentUpon>frm_ChuyenBay.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_DangNhap.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frm_DangNhap.Designer.cs">
       <DependentUpon>frm_DangNhap.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_DoiMatKhau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_DoiMatKhau.designer.cs">
+      <DependentUpon>frm_DoiMatKhau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_DSHangVe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_DSHangVe.designer.cs">
+      <DependentUpon>frm_DSHangVe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_DSHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_DSHoaDon.designer.cs">
+      <DependentUpon>frm_DSHoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_DSPhieuDatCho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_DSPhieuDatCho.designer.cs">
+      <DependentUpon>frm_DSPhieuDatCho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_DSVe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_DSVe.designer.cs">
+      <DependentUpon>frm_DSVe.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_KhachHang.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frm_KhachHang.designer.cs">
       <DependentUpon>frm_KhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_MayBay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_MayBay.designer.cs">
+      <DependentUpon>frm_MayBay.cs</DependentUpon>
     </Compile>
     <Compile Include="frm_Menu.cs">
       <SubType>Form</SubType>
@@ -79,19 +127,58 @@
     <Compile Include="frm_NhanVien.designer.cs">
       <DependentUpon>frm_NhanVien.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_ThongKe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_ThongKe.designer.cs">
+      <DependentUpon>frm_ThongKe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_TuyenBay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_TuyenBay.designer.cs">
+      <DependentUpon>frm_TuyenBay.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frm_BanVe.resx">
+      <DependentUpon>frm_BanVe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ChuyenBay.resx">
+      <DependentUpon>frm_ChuyenBay.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_DangNhap.resx">
       <DependentUpon>frm_DangNhap.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frm_DoiMatKhau.resx">
+      <DependentUpon>frm_DoiMatKhau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_DSHangVe.resx">
+      <DependentUpon>frm_DSHangVe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_DSHoaDon.resx">
+      <DependentUpon>frm_DSHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_DSPhieuDatCho.resx">
+      <DependentUpon>frm_DSPhieuDatCho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_DSVe.resx">
+      <DependentUpon>frm_DSVe.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_KhachHang.resx">
       <DependentUpon>frm_KhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_MayBay.resx">
+      <DependentUpon>frm_MayBay.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_Menu.resx">
       <DependentUpon>frm_Menu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_NhanVien.resx">
       <DependentUpon>frm_NhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_TuyenBay.resx">
+      <DependentUpon>frm_TuyenBay.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -164,6 +251,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\users-alt1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\world.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Met-het-vliegtuig-op-vakantie.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rocket-lunch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unlock.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

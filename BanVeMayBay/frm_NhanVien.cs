@@ -47,7 +47,7 @@ namespace BanVeMayBay
             dgvNV.Columns[2].Width = 200;
             dgvNV.Columns[3].Width = 100;
             dgvNV.Columns[4].Width = 100;
-            dgvNV.Columns[5].Width = 150;
+            dgvNV.Columns[5].Width = 200;
             dgvNV.Columns[6].Width = 250;
             dgvNV.AllowUserToAddRows = false;
             dgvNV.EditMode = DataGridViewEditMode.EditProgrammatically;
