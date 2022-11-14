@@ -135,5 +135,10 @@ namespace BanVeMayBay
         {
             Clear();
         }
+
+        private void guna2HtmlLabel8_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

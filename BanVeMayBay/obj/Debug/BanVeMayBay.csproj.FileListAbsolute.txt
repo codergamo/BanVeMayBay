@@ -49,4 +49,33 @@ E:\Github\BanVeMayBay\BanVeMayBay\obj\Debug\BanVeMayBay.frm_DSPhieuDatCho.resour
 E:\Github\BanVeMayBay\BanVeMayBay\obj\Debug\BanVeMayBay.frm_DSVe.resources
 E:\Github\BanVeMayBay\BanVeMayBay\obj\Debug\BanVeMayBay.frm_MayBay.resources
 E:\Github\BanVeMayBay\BanVeMayBay\obj\Debug\BanVeMayBay.frm_TuyenBay.resources
+<<<<<<< HEAD
 E:\Github\BanVeMayBay\BanVeMayBay\obj\Debug\BanVeMayBay.frm_ThongKe.resources
+=======
+D:\DB\MinhTrihahaha\BanVeMayBay\bin\Debug\BanVeMayBay.exe.config
+D:\DB\MinhTrihahaha\BanVeMayBay\bin\Debug\BanVeMayBay.exe
+D:\DB\MinhTrihahaha\BanVeMayBay\bin\Debug\BanVeMayBay.pdb
+D:\DB\MinhTrihahaha\BanVeMayBay\bin\Debug\Guna.UI2.dll
+D:\DB\MinhTrihahaha\BanVeMayBay\obj\Debug\BanVeMayBay.csproj.AssemblyReference.cache
+D:\DB\MinhTrihahaha\BanVeMayBay\obj\Debug\BanVeMayBay.csproj.SuggestedBindingRedirects.cache
+D:\DB\MinhTrihahaha\BanVeMayBay\obj\Debug\BanVeMayBay.frm_BanVe.resources
+D:\DB\MinhTrihahaha\BanVeMayBay\obj\Debug\BanVeMayBay.frm_ChuyenBay.resources
+D:\DB\MinhTrihahaha\BanVeMayBay\obj\Debug\BanVeMayBay.frm_DangNhap.resources
+D:\DB\MinhTrihahaha\BanVeMayBay\obj\Debug\BanVeMayBay.frm_DoiMatKhau.resources
+D:\DB\MinhTrihahaha\BanVeMayBay\obj\Debug\BanVeMayBay.frm_DSHangVe.resources
+D:\DB\MinhTrihahaha\BanVeMayBay\obj\Debug\BanVeMayBay.frm_DSHoaDon.resources
+D:\DB\MinhTrihahaha\BanVeMayBay\obj\Debug\BanVeMayBay.frm_DSPhieuDatCho.resources
+D:\DB\MinhTrihahaha\BanVeMayBay\obj\Debug\BanVeMayBay.frm_DSVe.resources
+D:\DB\MinhTrihahaha\BanVeMayBay\obj\Debug\BanVeMayBay.frm_KhachHang.resources
+D:\DB\MinhTrihahaha\BanVeMayBay\obj\Debug\BanVeMayBay.frm_MayBay.resources
+D:\DB\MinhTrihahaha\BanVeMayBay\obj\Debug\BanVeMayBay.frm_Menu.resources
+D:\DB\MinhTrihahaha\BanVeMayBay\obj\Debug\BanVeMayBay.frm_NhanVien.resources
+D:\DB\MinhTrihahaha\BanVeMayBay\obj\Debug\BanVeMayBay.frm_TuyenBay.resources
+D:\DB\MinhTrihahaha\BanVeMayBay\obj\Debug\BanVeMayBay.Properties.Resources.resources
+D:\DB\MinhTrihahaha\BanVeMayBay\obj\Debug\BanVeMayBay.csproj.GenerateResource.cache
+D:\DB\MinhTrihahaha\BanVeMayBay\obj\Debug\BanVeMayBay.csproj.CoreCompileInputs.cache
+D:\DB\MinhTrihahaha\BanVeMayBay\obj\Debug\BanVeMayBay.csproj.CopyComplete
+D:\DB\MinhTrihahaha\BanVeMayBay\obj\Debug\BanVeMayBay.exe
+D:\DB\MinhTrihahaha\BanVeMayBay\obj\Debug\BanVeMayBay.pdb
+D:\DB\MinhTrihahaha\BanVeMayBay\obj\Debug\BanVeMayBay.frm_ThongKe.resources
+>>>>>>> 1910f1c8d4a8633c8c58e1dd8ad77b483575a56e

@@ -147,6 +147,7 @@ namespace BanVeMayBay
             EditButtonColor(btn_DoiMatKhau, "ĐỔI MẬT KHẨU");
             frm_DoiMatKhau frmDMK = new frm_DoiMatKhau();
             AddForm(frmDMK);
+            frmDMK.StartPosition.Equals(FormStartPosition.CenterScreen);
         }
 
         private void btn_Thoat_Click(object sender, EventArgs e)
@@ -171,6 +172,11 @@ namespace BanVeMayBay
         {
             btn_Home.Visible = false;
             ms_DanhSach.Visible = false;
+        }
+
+        private void pnl_Top_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

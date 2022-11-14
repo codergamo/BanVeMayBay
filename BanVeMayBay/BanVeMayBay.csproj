@@ -52,16 +52,25 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BUS\HoaDonBUS.cs" />
+<<<<<<< HEAD
     <Compile Include="BUS\KhachHangBUS.cs" />
+=======
+>>>>>>> 1910f1c8d4a8633c8c58e1dd8ad77b483575a56e
     <Compile Include="BUS\NhanVienBUS.cs" />
     <Compile Include="BUS\TaiKhoanBUS.cs" />
     <Compile Include="DAO\DBConnection.cs" />
     <Compile Include="DAO\HoaDonDAO.cs" />
+<<<<<<< HEAD
     <Compile Include="DAO\KhachHangDAO.cs" />
     <Compile Include="DAO\NhanVienDAO.cs" />
     <Compile Include="DAO\TaiKhoanDAO.cs" />
     <Compile Include="DTO\HoaDon.cs" />
     <Compile Include="DTO\KhachHang.cs" />
+=======
+    <Compile Include="DAO\NhanVienDAO.cs" />
+    <Compile Include="DAO\TaiKhoanDAO.cs" />
+    <Compile Include="DTO\HoaDon.cs" />
+>>>>>>> 1910f1c8d4a8633c8c58e1dd8ad77b483575a56e
     <Compile Include="DTO\NhanVien.cs" />
     <Compile Include="DTO\TaiKhoan.cs" />
     <Compile Include="frm_BanVe.cs">

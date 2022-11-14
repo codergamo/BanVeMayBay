@@ -29,8 +29,13 @@ namespace BanVeMayBay
         private void guna2Button1_Click(object sender, EventArgs e)
         {
             TaiKhoan TK = new TaiKhoan();
+<<<<<<< HEAD
             TK.tenTK = guna2TextBox1.Text;
             TK.matKhau = guna2TextBox2.Text;
+=======
+            TK.TenTaiKhoan = guna2TextBox1.Text;
+            TK.MatKhau = guna2TextBox2.Text;
+>>>>>>> 1910f1c8d4a8633c8c58e1dd8ad77b483575a56e
             TaiKhoanBUS tkbus=new TaiKhoanBUS();
             tkbus.DMK(TK, guna2TextBox3.Text, guna2TextBox4.Text);
             resettextbox();
@@ -51,7 +56,11 @@ namespace BanVeMayBay
         private void showInformation()
         {
             TaiKhoan TK =new TaiKhoan();
+<<<<<<< HEAD
             TK.tenTK=guna2TextBox1.Text;
+=======
+            TK.TenTaiKhoan=guna2TextBox1.Text;
+>>>>>>> 1910f1c8d4a8633c8c58e1dd8ad77b483575a56e
             TaiKhoanBUS TKBUS=new TaiKhoanBUS();
             DataTable dt=new DataTable();
             TKBUS.SI(TK,dt);
