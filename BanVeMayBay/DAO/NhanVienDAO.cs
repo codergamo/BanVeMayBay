@@ -63,7 +63,7 @@ namespace DAO
         }
         public DataTable HienThi()
         {
-            const string sql = "select * from NHANVIEN";
+            const string sql = "select * from XEMNHANVIEN";
             return executeDisplayQuery(sql);
         }
         public DataTable Search(string str)

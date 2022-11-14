@@ -27,5 +27,13 @@ namespace BanVeMayBay.BUS
         {
             khDAO.XoaKH(kh);
         }
+        public void SuaKH(KhachHang kh, string str_cmnd) 
+        { 
+            khDAO.SuaKH(kh, str_cmnd);
+        }
+        public DataTable Search(string str) 
+        {
+            return khDAO.Search(str);       
+        }
     }
 }

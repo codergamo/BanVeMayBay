@@ -22,10 +22,11 @@ namespace BanVeMayBay.DTO
             NgaySinh = ngaySinh;
         }
         public string cMND { get => CMND; set => CMND = value; }
-        public string tenKH { get => CMND; set => CMND = value; }
+        public string tenKH { get => TenKH; set => TenKH = value; }
         public string sDT { get => SDT; set => SDT = value; }
         public string gioiTinh { get => GioiTinh; set => GioiTinh = value; }
         public string diaChi { get => DiaChi; set => DiaChi = value; }
         public DateTime ngaySinh { get => NgaySinh; set => NgaySinh = value; }
+
     }
 }

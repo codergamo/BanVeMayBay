@@ -1,4 +1,5 @@
 ﻿using BanVeMayBay.BUS;
+using BanVeMayBay.DAO;
 using BanVeMayBay.DTO;
 using DTO;
 using System;
@@ -16,10 +17,12 @@ namespace BanVeMayBay
 {
     public partial class frm_KhachHang : Form
     {
+        private string str_cmnd;
         public frm_KhachHang()
         {
             InitializeComponent();
         }
+  
         private void XemKhachHang() 
         {
             KhachHangBUS khachHangBUS = new KhachHangBUS();
@@ -41,17 +44,18 @@ namespace BanVeMayBay
             dgvKH.EditMode = DataGridViewEditMode.EditProgrammatically;
         }
         private void Clear() {
+            txt_Search.Text = "";
             txt_CMND.Text = "";
             txt_DiaChi.Text = "";
             txt_SDT.Text = "";
             txt_TenKH.Text = "";
-            cb_GioiTinh.TabIndex = 0;
+            cb_GioiTinh.SelectedIndex = 0;
             dtp_NgaySinh.Value = DateTime.Today;
-        
         }
 
         private void frm_KhachHang_Load(object sender, EventArgs e)
         {
+            Clear();
             XemKhachHang();
         }
 
@@ -63,12 +67,13 @@ namespace BanVeMayBay
             txt_SDT.Text = dgvKH.CurrentRow.Cells[2].Value.ToString();
             dtp_NgaySinh.Text = dgvKH.CurrentRow.Cells[4].Value.ToString();
             txt_DiaChi.Text = dgvKH.CurrentRow.Cells[5].Value.ToString();
+            str_cmnd = txt_CMND.Text;
         }
 
         private void btn_Them_Click(object sender, EventArgs e)
         {
             KhachHang kh = new KhachHang(txt_CMND.Text,txt_TenKH.Text,txt_SDT.Text,cb_GioiTinh.Text,txt_DiaChi.Text,dtp_NgaySinh.Value);
-            KhachHangBUS khachHangBUS = new KhachHangBUS();
+            KhachHangBUS khachHangBUS = new KhachHangBUS(); 
             khachHangBUS.ThemKH(kh);
             XemKhachHang();
             Clear();
@@ -87,6 +92,26 @@ namespace BanVeMayBay
             kh.cMND = txt_CMND.Text;
             khachHangBUS.XoaKH(kh);
             XemKhachHang();
+            Clear();
+        }
+
+        private void btn_Sua_Click(object sender, EventArgs e)
+        {
+            KhachHang khachHang = new KhachHang(txt_CMND.Text, txt_TenKH.Text, txt_SDT.Text, cb_GioiTinh.Text, txt_DiaChi.Text, dtp_NgaySinh.Value);
+            KhachHangBUS khachHangBUS = new KhachHangBUS();
+            khachHangBUS.SuaKH(khachHang, str_cmnd);
+            XemKhachHang();
+            Clear();
+        }
+
+        private void txt_Search_TextChanged(object sender, EventArgs e)
+        {
+            KhachHangBUS khachHangBUS = new KhachHangBUS();
+            dgvKH.DataSource = khachHangBUS.Search(txt_Search.Text);
+        }
+
+        private void btn_TimKiem_Click_1(object sender, EventArgs e)
+        {
             Clear();
         }
     }
