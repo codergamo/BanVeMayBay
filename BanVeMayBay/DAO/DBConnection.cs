@@ -124,5 +124,50 @@ namespace DAO
         {
             MessageBox.Show(e.Message);
         }
+        public void executeDMKQuery(String query, SqlParameter[] sqlParameter)
+        {
+            using (SqlCommand sqlCommand = new SqlCommand(query, openConnection()))
+            {
+                sqlCommand.CommandType = CommandType.StoredProcedure;
+                openConnection().InfoMessage += Cnn_infomessage;
+                sqlCommand.Parameters.AddRange(sqlParameter);
+                try
+                {
+                    sqlCommand.ExecuteNonQuery();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                finally
+                {
+                    connection.Close();
+                }
+            }
+        }
+        public void executeShowInformation(String query, SqlParameter[] sqlParameter,DataTable dt)
+        {
+            using (SqlCommand sqlCommand = new SqlCommand(query, openConnection()))
+            {
+                try
+                {
+                    sqlCommand.CommandType = CommandType.StoredProcedure;
+                    sqlCommand.Parameters.AddRange(sqlParameter);
+                    SqlDataAdapter da = new SqlDataAdapter(sqlCommand);
+                    da.Fill(dt);
+                    sqlCommand.ExecuteNonQuery();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                finally
+                {
+                    connection.Close();
+                }
+              
+            }
+        }
+
     }
-}
+    }
