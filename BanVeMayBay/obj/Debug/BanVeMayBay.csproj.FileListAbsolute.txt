@@ -49,3 +49,4 @@ E:\Github\BanVeMayBay\BanVeMayBay\obj\Debug\BanVeMayBay.frm_DSPhieuDatCho.resour
 E:\Github\BanVeMayBay\BanVeMayBay\obj\Debug\BanVeMayBay.frm_DSVe.resources
 E:\Github\BanVeMayBay\BanVeMayBay\obj\Debug\BanVeMayBay.frm_MayBay.resources
 E:\Github\BanVeMayBay\BanVeMayBay\obj\Debug\BanVeMayBay.frm_TuyenBay.resources
+E:\Github\BanVeMayBay\BanVeMayBay\obj\Debug\BanVeMayBay.frm_ThongKe.resources
