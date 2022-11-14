@@ -124,10 +124,7 @@ namespace DAO
         {
             MessageBox.Show(e.Message);
         }
-<<<<<<< HEAD
 
-=======
->>>>>>> 1910f1c8d4a8633c8c58e1dd8ad77b483575a56e
         public void executeDMKQuery(String query, SqlParameter[] sqlParameter)
         {
             using (SqlCommand sqlCommand = new SqlCommand(query, openConnection()))
@@ -149,11 +146,8 @@ namespace DAO
                 }
             }
         }
-<<<<<<< HEAD
+
         public void executeShowInformation(String query, SqlParameter[] sqlParameter, DataTable dt)
-=======
-        public void executeShowInformation(String query, SqlParameter[] sqlParameter,DataTable dt)
->>>>>>> 1910f1c8d4a8633c8c58e1dd8ad77b483575a56e
         {
             using (SqlCommand sqlCommand = new SqlCommand(query, openConnection()))
             {
@@ -173,15 +167,8 @@ namespace DAO
                 {
                     connection.Close();
                 }
-<<<<<<< HEAD
 
             }
         }
-=======
-              
-            }
-        }
 
-    }
->>>>>>> 1910f1c8d4a8633c8c58e1dd8ad77b483575a56e
     }
