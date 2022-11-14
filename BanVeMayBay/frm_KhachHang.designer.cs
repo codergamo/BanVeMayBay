@@ -51,6 +51,7 @@
             this.btn_Sua = new Guna.UI2.WinForms.Guna2Button();
             this.btn_Xoa = new Guna.UI2.WinForms.Guna2Button();
             this.btn_Them = new Guna.UI2.WinForms.Guna2Button();
+            this.txt_Search = new Guna.UI2.WinForms.Guna2TextBox();
             this.pnl_ThongTinNV.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvKH)).BeginInit();
@@ -85,7 +86,7 @@
             this.dtp_NgaySinh.Name = "dtp_NgaySinh";
             this.dtp_NgaySinh.Size = new System.Drawing.Size(203, 24);
             this.dtp_NgaySinh.TabIndex = 15;
-            this.dtp_NgaySinh.Value = new System.DateTime(2022, 10, 26, 13, 48, 11, 128);
+            this.dtp_NgaySinh.Value = new System.DateTime(2022, 11, 11, 0, 0, 0, 0);
             // 
             // cb_GioiTinh
             // 
@@ -171,6 +172,7 @@
             this.txt_SDT.SelectedText = "";
             this.txt_SDT.Size = new System.Drawing.Size(203, 24);
             this.txt_SDT.TabIndex = 11;
+            this.txt_SDT.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_CMND_KeyPress);
             // 
             // guna2HtmlLabel6
             // 
@@ -269,6 +271,7 @@
             this.txt_CMND.SelectedText = "";
             this.txt_CMND.Size = new System.Drawing.Size(203, 24);
             this.txt_CMND.TabIndex = 1;
+            this.txt_CMND.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_CMND_KeyPress);
             // 
             // guna2HtmlLabel1
             // 
@@ -307,7 +310,7 @@
             // 
             this.guna2Panel1.Controls.Add(this.dgvKH);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.guna2Panel1.Location = new System.Drawing.Point(138, 0);
+            this.guna2Panel1.Location = new System.Drawing.Point(413, 0);
             this.guna2Panel1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(890, 605);
@@ -366,6 +369,7 @@
             this.dgvKH.ThemeStyle.RowsStyle.Height = 24;
             this.dgvKH.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvKH.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dgvKH.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvKH_CellClick);
             // 
             // btn_TimKiem
             // 
@@ -377,14 +381,14 @@
             this.btn_TimKiem.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btn_TimKiem.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_TimKiem.ForeColor = System.Drawing.Color.Black;
-            this.btn_TimKiem.Image = global::BanVeMayBay.Properties.Resources.search;
             this.btn_TimKiem.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btn_TimKiem.Location = new System.Drawing.Point(4, 355);
             this.btn_TimKiem.Margin = new System.Windows.Forms.Padding(2);
             this.btn_TimKiem.Name = "btn_TimKiem";
             this.btn_TimKiem.Size = new System.Drawing.Size(135, 37);
             this.btn_TimKiem.TabIndex = 12;
-            this.btn_TimKiem.Text = "Tìm kiếm";
+            this.btn_TimKiem.Text = "Clear";
+            this.btn_TimKiem.Click += new System.EventHandler(this.btn_TimKiem_Click_1);
             // 
             // btn_Sua
             // 
@@ -404,6 +408,7 @@
             this.btn_Sua.Size = new System.Drawing.Size(135, 37);
             this.btn_Sua.TabIndex = 11;
             this.btn_Sua.Text = "Sửa";
+            this.btn_Sua.Click += new System.EventHandler(this.btn_Sua_Click);
             // 
             // btn_Xoa
             // 
@@ -423,6 +428,7 @@
             this.btn_Xoa.Size = new System.Drawing.Size(135, 37);
             this.btn_Xoa.TabIndex = 10;
             this.btn_Xoa.Text = "Xóa";
+            this.btn_Xoa.Click += new System.EventHandler(this.btn_Xoa_Click);
             // 
             // btn_Them
             // 
@@ -442,12 +448,41 @@
             this.btn_Them.Size = new System.Drawing.Size(135, 37);
             this.btn_Them.TabIndex = 9;
             this.btn_Them.Text = "Thêm";
+            this.btn_Them.Click += new System.EventHandler(this.btn_Them_Click);
+            // 
+            // txt_Search
+            // 
+            this.txt_Search.AutoRoundedCorners = true;
+            this.txt_Search.BackColor = System.Drawing.Color.Transparent;
+            this.txt_Search.BorderColor = System.Drawing.Color.Black;
+            this.txt_Search.BorderRadius = 17;
+            this.txt_Search.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_Search.DefaultText = "";
+            this.txt_Search.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_Search.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_Search.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_Search.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_Search.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_Search.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_Search.ForeColor = System.Drawing.Color.Black;
+            this.txt_Search.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_Search.Location = new System.Drawing.Point(145, 355);
+            this.txt_Search.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.txt_Search.Name = "txt_Search";
+            this.txt_Search.PasswordChar = '\0';
+            this.txt_Search.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.txt_Search.PlaceholderText = "Tìm Kiếm ";
+            this.txt_Search.SelectedText = "";
+            this.txt_Search.Size = new System.Drawing.Size(274, 37);
+            this.txt_Search.TabIndex = 14;
+            this.txt_Search.TextChanged += new System.EventHandler(this.txt_Search_TextChanged);
             // 
             // frm_KhachHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1028, 605);
+            this.ClientSize = new System.Drawing.Size(1303, 605);
+            this.Controls.Add(this.txt_Search);
             this.Controls.Add(this.btn_TimKiem);
             this.Controls.Add(this.btn_Sua);
             this.Controls.Add(this.btn_Xoa);
@@ -487,5 +522,6 @@
         private Guna.UI2.WinForms.Guna2CustomGradientPanel pnl_ThongTinNV;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2DataGridView dgvKH;
+        private Guna.UI2.WinForms.Guna2TextBox txt_Search;
     }
 }

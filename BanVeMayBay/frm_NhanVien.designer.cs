@@ -35,6 +35,7 @@
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.pnl_ThongTinNV = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.guna2HtmlLabel8 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.dtp_NgaySinh = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.cb_GioiTinh = new Guna.UI2.WinForms.Guna2ComboBox();
             this.txt_DiaChi = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -52,8 +53,7 @@
             this.btn_Xoa = new Guna.UI2.WinForms.Guna2Button();
             this.btn_Them = new Guna.UI2.WinForms.Guna2Button();
             this.txt_Search = new Guna.UI2.WinForms.Guna2TextBox();
-            this.btn_TimKiem = new Guna.UI2.WinForms.Guna2Button();
-            this.dtp_NgaySinh = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.btn_Clear = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNV)).BeginInit();
             this.guna2Panel1.SuspendLayout();
             this.pnl_ThongTinNV.SuspendLayout();
@@ -159,6 +159,25 @@
             this.guna2HtmlLabel8.Size = new System.Drawing.Size(239, 32);
             this.guna2HtmlLabel8.TabIndex = 16;
             this.guna2HtmlLabel8.Text = "Thông tin nhân viên";
+            // 
+            // dtp_NgaySinh
+            // 
+            this.dtp_NgaySinh.AutoRoundedCorners = true;
+            this.dtp_NgaySinh.BackColor = System.Drawing.Color.Transparent;
+            this.dtp_NgaySinh.BorderRadius = 11;
+            this.dtp_NgaySinh.Checked = true;
+            this.dtp_NgaySinh.FillColor = System.Drawing.Color.White;
+            this.dtp_NgaySinh.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.dtp_NgaySinh.ForeColor = System.Drawing.Color.Black;
+            this.dtp_NgaySinh.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtp_NgaySinh.Location = new System.Drawing.Point(172, 170);
+            this.dtp_NgaySinh.Margin = new System.Windows.Forms.Padding(2);
+            this.dtp_NgaySinh.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.dtp_NgaySinh.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.dtp_NgaySinh.Name = "dtp_NgaySinh";
+            this.dtp_NgaySinh.Size = new System.Drawing.Size(203, 24);
+            this.dtp_NgaySinh.TabIndex = 3;
+            this.dtp_NgaySinh.Value = new System.DateTime(2022, 10, 26, 13, 48, 11, 128);
             // 
             // cb_GioiTinh
             // 
@@ -487,45 +506,25 @@
             this.txt_Search.TabIndex = 9;
             this.txt_Search.TextChanged += new System.EventHandler(this.guna2TextBox1_TextChanged);
             // 
-            // btn_TimKiem
+            // btn_Clear
             // 
-            this.btn_TimKiem.AutoRoundedCorners = true;
-            this.btn_TimKiem.BackColor = System.Drawing.Color.Transparent;
-            this.btn_TimKiem.BorderRadius = 17;
-            this.btn_TimKiem.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_TimKiem.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_TimKiem.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_TimKiem.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_TimKiem.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_TimKiem.ForeColor = System.Drawing.Color.Black;
-            this.btn_TimKiem.Image = global::BanVeMayBay.Properties.Resources.search;
-            this.btn_TimKiem.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_TimKiem.Location = new System.Drawing.Point(288, 10);
-            this.btn_TimKiem.Margin = new System.Windows.Forms.Padding(2);
-            this.btn_TimKiem.Name = "btn_TimKiem";
-            this.btn_TimKiem.Size = new System.Drawing.Size(135, 37);
-            this.btn_TimKiem.TabIndex = 10;
-            this.btn_TimKiem.Text = "Tìm kiếm";
-            this.btn_TimKiem.Click += new System.EventHandler(this.btn_TimKiem_Click);
-            // 
-            // dtp_NgaySinh
-            // 
-            this.dtp_NgaySinh.AutoRoundedCorners = true;
-            this.dtp_NgaySinh.BackColor = System.Drawing.Color.Transparent;
-            this.dtp_NgaySinh.BorderRadius = 11;
-            this.dtp_NgaySinh.Checked = true;
-            this.dtp_NgaySinh.FillColor = System.Drawing.Color.White;
-            this.dtp_NgaySinh.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.dtp_NgaySinh.ForeColor = System.Drawing.Color.Black;
-            this.dtp_NgaySinh.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtp_NgaySinh.Location = new System.Drawing.Point(172, 170);
-            this.dtp_NgaySinh.Margin = new System.Windows.Forms.Padding(2);
-            this.dtp_NgaySinh.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.dtp_NgaySinh.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.dtp_NgaySinh.Name = "dtp_NgaySinh";
-            this.dtp_NgaySinh.Size = new System.Drawing.Size(203, 24);
-            this.dtp_NgaySinh.TabIndex = 3;
-            this.dtp_NgaySinh.Value = new System.DateTime(2022, 10, 26, 13, 48, 11, 128);
+            this.btn_Clear.AutoRoundedCorners = true;
+            this.btn_Clear.BackColor = System.Drawing.Color.Transparent;
+            this.btn_Clear.BorderRadius = 17;
+            this.btn_Clear.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Clear.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Clear.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_Clear.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_Clear.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Clear.ForeColor = System.Drawing.Color.Black;
+            this.btn_Clear.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_Clear.Location = new System.Drawing.Point(288, 10);
+            this.btn_Clear.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_Clear.Name = "btn_Clear";
+            this.btn_Clear.Size = new System.Drawing.Size(135, 37);
+            this.btn_Clear.TabIndex = 10;
+            this.btn_Clear.Text = "Clear";
+            this.btn_Clear.Click += new System.EventHandler(this.btn_Clear_Click);
             // 
             // frm_NhanVien
             // 
@@ -533,7 +532,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1028, 517);
             this.Controls.Add(this.txt_Search);
-            this.Controls.Add(this.btn_TimKiem);
+            this.Controls.Add(this.btn_Clear);
             this.Controls.Add(this.btn_Sua);
             this.Controls.Add(this.btn_Xoa);
             this.Controls.Add(this.btn_Them);
@@ -574,7 +573,7 @@
         private Guna.UI2.WinForms.Guna2Button btn_Xoa;
         private Guna.UI2.WinForms.Guna2Button btn_Sua;
         private Guna.UI2.WinForms.Guna2TextBox txt_Search;
-        private Guna.UI2.WinForms.Guna2Button btn_TimKiem;
+        private Guna.UI2.WinForms.Guna2Button btn_Clear;
         private Guna.UI2.WinForms.Guna2DateTimePicker dtp_NgaySinh;
     }
 }

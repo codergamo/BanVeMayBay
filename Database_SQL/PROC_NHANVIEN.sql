@@ -1,5 +1,32 @@
 ﻿use QUANLYCHUYENBAY
 go
+create view XEMNHANVIEN 
+as 
+	select * from NHANVIEN 
+go
+CREATE TRIGGER CHECK_CMND_NHANVIEN
+ON NHANVIEN
+INSTEAD OF INSERT
+AS
+BEGIN
+	IF EXISTS (SELECT * FROM inserted WHERE CMND IN
+	(
+	SELECT CMND
+	FROM NHANVIEN
+	))
+	BEGIN
+		PRINT N'Không được chèn 2 nhân viên cùng CMND'
+		ROLLBACK TRANSACTION 
+	END
+	ELSE
+	BEGIN
+	     INSERT INTO NHANVIEN
+       SELECT MaNV,CMND,TenNV,SDT,GioiTinh,Diachi,NgaySinh
+       FROM inserted
+	END
+END
+go
+go
 create proc ThemNV
 @MaNV char(20), @CMND char(20), @TenNV nvarchar(45), @GioiTinh nvarchar(20), @NgaySinh date, @SDT  char(20),@Diachi nvarchar(100)
 as
