@@ -1,4 +1,5 @@
 ﻿using System;
+using DTO;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,11 +8,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BUS;
 
 namespace BanVeMayBay
 {
     public partial class frm_DangNhap : Form
     {
+        public string str1,str2;
         public frm_DangNhap()
         {
             InitializeComponent();
@@ -45,11 +48,24 @@ namespace BanVeMayBay
 
         private void btn_Login_Click(object sender, EventArgs e)
         {
+            TaiKhoanBUS taiKhoanBUS = new TaiKhoanBUS();
+            TaiKhoan tk = new TaiKhoan();
+            str1 = txt_Username.Text;
+            tk.tenTK = txt_Username.Text;
+            tk.matKhau = txt_Password.Text;
+            DataTable dt = new DataTable();
+            dt = taiKhoanBUS.Login(tk);
 
-            this.Hide();
-            frm_Menu frm_Menu = new frm_Menu();
-            frm_Menu.ShowDialog();
-            this.Show();
+            if (dt.Rows.Count == 1)
+            {
+                this.Hide();
+                frm_Menu frm_Menu = new frm_Menu();
+             //   frm_Menu.Role(dt.Rows[0].ItemArray[3].ToString());
+                frm_Menu.DT = dt;
+                frm_Menu.ShowDialog();
+                this.Show();
+            }
+
         }
     }
 }

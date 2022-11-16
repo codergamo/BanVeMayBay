@@ -25,5 +25,10 @@ namespace BUS
         {
             tkDAO.showInformation(TK,dt);
         }
+        public DataTable Login(TaiKhoan tk)
+        {
+            return tkDAO.Login(tk);
+        }
+
     }
 }

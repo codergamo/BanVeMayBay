@@ -16,6 +16,8 @@ namespace BanVeMayBay
         {
             InitializeComponent();
         }
+        private DataTable dt;
+        public DataTable DT { set => dt = value; }
         private void EditButtonColor(Button btn, String topname)
         {
             btn_Home.Visible = true;
@@ -146,6 +148,7 @@ namespace BanVeMayBay
         {
             EditButtonColor(btn_DoiMatKhau, "ĐỔI MẬT KHẨU");
             frm_DoiMatKhau frmDMK = new frm_DoiMatKhau();
+            frmDMK.DT = dt;
             AddForm(frmDMK);
             frmDMK.StartPosition.Equals(FormStartPosition.CenterScreen);
         }
@@ -172,11 +175,33 @@ namespace BanVeMayBay
         {
             btn_Home.Visible = false;
             ms_DanhSach.Visible = false;
+            Role();
         }
 
         private void pnl_Top_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void pnl_Logo_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+        public void Role()
+        {
+            if(dt.Rows[0].ItemArray[3].ToString() == "2")
+            {
+                btn_DanhSach.Visible = false;
+                btn_ChuyenBay.Visible = false;
+                btn_MayBay.Visible = false;
+                btn_NhanVien.Visible = false;
+                btn_ThongKe.Visible = false;
+                btn_TuyenBay.Visible = false;
+                btn_KhachHang.Location = new Point(0, 114);
+                btn_DoiMatKhau.Location = new Point(0, 163);
+                btn_Thoat.Location = new Point(0, 212);
+                lb_Role.Text = "EMPLOYEE";
+            }
         }
     }
 }
