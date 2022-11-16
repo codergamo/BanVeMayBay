@@ -60,10 +60,10 @@
             // 
             this.guna2Panel1.Controls.Add(this.dgvDSHoaDon);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.guna2Panel1.Location = new System.Drawing.Point(595, 0);
+            this.guna2Panel1.Location = new System.Drawing.Point(581, 0);
             this.guna2Panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(1187, 892);
+            this.guna2Panel1.Size = new System.Drawing.Size(1220, 973);
             this.guna2Panel1.TabIndex = 25;
             // 
             // dgvDSHoaDon
@@ -90,13 +90,13 @@
             this.dgvDSHoaDon.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvDSHoaDon.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.dgvDSHoaDon.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgvDSHoaDon.Location = new System.Drawing.Point(0, 29);
+            this.dgvDSHoaDon.Location = new System.Drawing.Point(0, 23);
             this.dgvDSHoaDon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvDSHoaDon.Name = "dgvDSHoaDon";
             this.dgvDSHoaDon.RowHeadersVisible = false;
             this.dgvDSHoaDon.RowHeadersWidth = 51;
             this.dgvDSHoaDon.RowTemplate.Height = 24;
-            this.dgvDSHoaDon.Size = new System.Drawing.Size(1187, 863);
+            this.dgvDSHoaDon.Size = new System.Drawing.Size(1220, 950);
             this.dgvDSHoaDon.TabIndex = 0;
             this.dgvDSHoaDon.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvDSHoaDon.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -445,7 +445,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1782, 892);
+            this.ClientSize = new System.Drawing.Size(1801, 973);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.pnl_ThongTinKH);
             this.Controls.Add(this.btn_Sua);
