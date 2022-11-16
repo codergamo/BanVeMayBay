@@ -110,12 +110,6 @@ namespace BanVeMayBay
             txt_SDT.Text = dgvNV.CurrentRow.Cells[5].Value.ToString();
             txt_DiaChi.Text = dgvNV.CurrentRow.Cells[6].Value.ToString();
         }
-
-        private void pnl_ThongTinNV_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void btn_Sua_Click(object sender, EventArgs e)
         {
             NhanVienBUS nhanVienBUS = new NhanVienBUS();
@@ -135,11 +129,5 @@ namespace BanVeMayBay
         {
             Clear();
         }
-
-        private void guna2HtmlLabel8_Click(object sender, EventArgs e)
-        {
-
-        }
-
     }
 }

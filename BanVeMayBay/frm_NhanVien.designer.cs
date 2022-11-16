@@ -146,7 +146,6 @@
             this.pnl_ThongTinNV.Name = "pnl_ThongTinNV";
             this.pnl_ThongTinNV.Size = new System.Drawing.Size(406, 271);
             this.pnl_ThongTinNV.TabIndex = 16;
-            this.pnl_ThongTinNV.Paint += new System.Windows.Forms.PaintEventHandler(this.pnl_ThongTinNV_Paint);
             // 
             // guna2HtmlLabel8
             // 
@@ -159,7 +158,6 @@
             this.guna2HtmlLabel8.Size = new System.Drawing.Size(239, 32);
             this.guna2HtmlLabel8.TabIndex = 16;
             this.guna2HtmlLabel8.Text = "Thông tin nhân viên";
-            this.guna2HtmlLabel8.Click += new System.EventHandler(this.guna2HtmlLabel8_Click);
             // 
             // dtp_NgaySinh
             // 
