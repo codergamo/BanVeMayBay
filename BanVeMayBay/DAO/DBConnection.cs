@@ -33,6 +33,7 @@ namespace DAO
             {
                 sqlCommand.CommandType = CommandType.StoredProcedure;
                 sqlCommand.Parameters.AddRange(sqlParameter);
+                openConnection().InfoMessage += Cnn_infomessage;
                 try
                 {
                     sqlCommand.ExecuteNonQuery();

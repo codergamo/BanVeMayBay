@@ -46,10 +46,12 @@
             this.btn_DanhSach = new System.Windows.Forms.Button();
             this.btn_BanVe = new System.Windows.Forms.Button();
             this.pnl_Logo = new System.Windows.Forms.Panel();
+            this.lb_Role = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.pnl_Main = new System.Windows.Forms.Panel();
             this.pnl_Top = new System.Windows.Forms.Panel();
             this.pnl_Menu = new System.Windows.Forms.Panel();
             this.ms_DanhSach.SuspendLayout();
+            this.pnl_Logo.SuspendLayout();
             this.pnl_Top.SuspendLayout();
             this.pnl_Menu.SuspendLayout();
             this.SuspendLayout();
@@ -110,6 +112,7 @@
             // 
             // btn_Thoat
             // 
+            this.btn_Thoat.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btn_Thoat.FlatAppearance.BorderSize = 0;
             this.btn_Thoat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Thoat.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -324,12 +327,27 @@
             // pnl_Logo
             // 
             this.pnl_Logo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(87)))), ((int)(((byte)(91)))));
+            this.pnl_Logo.Controls.Add(this.lb_Role);
             this.pnl_Logo.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl_Logo.Location = new System.Drawing.Point(0, 0);
             this.pnl_Logo.Margin = new System.Windows.Forms.Padding(2);
             this.pnl_Logo.Name = "pnl_Logo";
             this.pnl_Logo.Size = new System.Drawing.Size(165, 65);
             this.pnl_Logo.TabIndex = 0;
+            this.pnl_Logo.Paint += new System.Windows.Forms.PaintEventHandler(this.pnl_Logo_Paint);
+            // 
+            // lb_Role
+            // 
+            this.lb_Role.AutoSize = false;
+            this.lb_Role.BackColor = System.Drawing.Color.Transparent;
+            this.lb_Role.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_Role.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.lb_Role.Location = new System.Drawing.Point(0, 0);
+            this.lb_Role.Name = "lb_Role";
+            this.lb_Role.Size = new System.Drawing.Size(165, 65);
+            this.lb_Role.TabIndex = 0;
+            this.lb_Role.Text = "ADMIN";
+            this.lb_Role.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pnl_Main
             // 
@@ -381,6 +399,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.btn_Thoat;
             this.ClientSize = new System.Drawing.Size(1028, 609);
             this.Controls.Add(this.ms_DanhSach);
             this.Controls.Add(this.pnl_Main);
@@ -394,6 +413,7 @@
             this.Load += new System.EventHandler(this.frm_Menu_Load);
             this.ms_DanhSach.ResumeLayout(false);
             this.ms_DanhSach.PerformLayout();
+            this.pnl_Logo.ResumeLayout(false);
             this.pnl_Top.ResumeLayout(false);
             this.pnl_Top.PerformLayout();
             this.pnl_Menu.ResumeLayout(false);
@@ -425,5 +445,6 @@
         private System.Windows.Forms.Panel pnl_Main;
         private System.Windows.Forms.Panel pnl_Top;
         private System.Windows.Forms.Panel pnl_Menu;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lb_Role;
     }
 }

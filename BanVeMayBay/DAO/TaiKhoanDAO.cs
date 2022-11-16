@@ -36,5 +36,16 @@ namespace DAO
 
             executeShowInformation(sql, sqlParameters,dt);
         }    
+        public DataTable Login(TaiKhoan tk)
+        {
+            string sql = "select * from Dang_Nhap(@Username,@Password)";
+            SqlParameter[] sqlParameters = new SqlParameter[2];
+            sqlParameters[0] = new SqlParameter("@Username", SqlDbType.VarChar);
+            sqlParameters[0].Value = Convert.ToString(tk.tenTK);
+            sqlParameters[1] = new SqlParameter("@Password", SqlDbType.VarChar);
+            sqlParameters[1].Value = Convert.ToString(tk.matKhau);
+
+            return executeSearchQuery(sql,sqlParameters);
+        }
     }
 }

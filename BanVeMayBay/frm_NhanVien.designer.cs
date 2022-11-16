@@ -53,7 +53,7 @@
             this.btn_Xoa = new Guna.UI2.WinForms.Guna2Button();
             this.btn_Them = new Guna.UI2.WinForms.Guna2Button();
             this.txt_Search = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txt_Clear = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_Clear = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNV)).BeginInit();
             this.guna2Panel1.SuspendLayout();
             this.pnl_ThongTinNV.SuspendLayout();
@@ -507,31 +507,32 @@
             this.txt_Search.TabIndex = 9;
             this.txt_Search.TextChanged += new System.EventHandler(this.guna2TextBox1_TextChanged);
             // 
-            // txt_Clear
+            // btn_Clear
             // 
-            this.txt_Clear.AutoRoundedCorners = true;
-            this.txt_Clear.BackColor = System.Drawing.Color.Transparent;
-            this.txt_Clear.BorderRadius = 17;
-            this.txt_Clear.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.txt_Clear.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.txt_Clear.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.txt_Clear.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.txt_Clear.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Clear.ForeColor = System.Drawing.Color.Black;
-            this.txt_Clear.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txt_Clear.Location = new System.Drawing.Point(288, 10);
-            this.txt_Clear.Margin = new System.Windows.Forms.Padding(2);
-            this.txt_Clear.Name = "txt_Clear";
-            this.txt_Clear.Size = new System.Drawing.Size(122, 37);
-            this.txt_Clear.TabIndex = 17;
-            this.txt_Clear.Text = "Clear";
+            this.btn_Clear.AutoRoundedCorners = true;
+            this.btn_Clear.BackColor = System.Drawing.Color.Transparent;
+            this.btn_Clear.BorderRadius = 17;
+            this.btn_Clear.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Clear.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Clear.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_Clear.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_Clear.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Clear.ForeColor = System.Drawing.Color.Black;
+            this.btn_Clear.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_Clear.Location = new System.Drawing.Point(288, 10);
+            this.btn_Clear.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_Clear.Name = "btn_Clear";
+            this.btn_Clear.Size = new System.Drawing.Size(122, 37);
+            this.btn_Clear.TabIndex = 17;
+            this.btn_Clear.Text = "Clear";
+            this.btn_Clear.Click += new System.EventHandler(this.btn_Clear_Click);
             // 
             // frm_NhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1304, 517);
-            this.Controls.Add(this.txt_Clear);
+            this.Controls.Add(this.btn_Clear);
             this.Controls.Add(this.txt_Search);
             this.Controls.Add(this.btn_Sua);
             this.Controls.Add(this.btn_Xoa);
@@ -574,6 +575,6 @@
         private Guna.UI2.WinForms.Guna2Button btn_Sua;
         private Guna.UI2.WinForms.Guna2TextBox txt_Search;
         private Guna.UI2.WinForms.Guna2DateTimePicker dtp_NgaySinh;
-        private Guna.UI2.WinForms.Guna2Button txt_Clear;
+        private Guna.UI2.WinForms.Guna2Button btn_Clear;
     }
 }

@@ -20,20 +20,30 @@ namespace BanVeMayBay
         {
             InitializeComponent();
         }
-
+        private DataTable dt;
+        public DataTable DT { set => dt = value; }
         private void frm_DoiMatKhau_Load(object sender, EventArgs e)
         {
-           
+            LoadTK();
         }
-
+        public void LoadTK()
+        {
+            NhanVienBUS nhanVienBUS = new NhanVienBUS();
+            DataTable dt1 = new DataTable();
+            dt1 = nhanVienBUS.Search(dt.Rows[0].ItemArray[2].ToString());
+            lb_Username.Text = dt.Rows[0].ItemArray[0].ToString();
+            lb_Password.Text = dt.Rows[0].ItemArray[1].ToString();
+            lb_EmployeeName.Text = dt1.Rows[0].ItemArray[2].ToString();
+            lb_Role.Text = dt.Rows[0].ItemArray[3].ToString();
+        }
         private void guna2Button1_Click(object sender, EventArgs e)
         {
             TaiKhoan TK = new TaiKhoan();
-            TK.tenTK = guna2TextBox1.Text;
-            TK.matKhau = guna2TextBox2.Text;
+            TK.tenTK = txt_Username.Text;
+            TK.matKhau = txt_Password.Text;
 
             TaiKhoanBUS tkbus=new TaiKhoanBUS();
-            tkbus.DMK(TK, guna2TextBox3.Text, guna2TextBox4.Text);
+            tkbus.DMK(TK, txt_NewPassword.Text, txt_RetypePassword.Text);
             resettextbox();
 
         }
@@ -44,23 +54,23 @@ namespace BanVeMayBay
         }
         private void resettextbox()
         {
-            guna2TextBox1.Text = "";
-            guna2TextBox2.Text = "";
-            guna2TextBox3.Text = "";
-            guna2TextBox4.Text = "";
+            txt_Username.Text = "";
+            txt_Password.Text = "";
+            txt_NewPassword.Text = "";
+            txt_RetypePassword.Text = "";
         }
         private void showInformation()
         {
             TaiKhoan TK =new TaiKhoan();
-            TK.tenTK=guna2TextBox1.Text;
+            TK.tenTK=txt_Username.Text;
 
             TaiKhoanBUS TKBUS=new TaiKhoanBUS();
             DataTable dt=new DataTable();
             TKBUS.SI(TK,dt);
-            guna2HtmlLabel10.Text = Convert.ToString(dt.Rows[0].ItemArray[0]);
-            guna2HtmlLabel11.Text = Convert.ToString(dt.Rows[0].ItemArray[1]);
-            guna2HtmlLabel13.Text = Convert.ToString(dt.Rows[0].ItemArray[2]);
-            guna2HtmlLabel12.Text = Convert.ToString(dt.Rows[0].ItemArray[3]);
+            lb_Username.Text = Convert.ToString(dt.Rows[0].ItemArray[0]);
+            lb_Password.Text = Convert.ToString(dt.Rows[0].ItemArray[1]);
+            lb_Role.Text = Convert.ToString(dt.Rows[0].ItemArray[2]);
+            lb_EmployeeName.Text = Convert.ToString(dt.Rows[0].ItemArray[3]);
 
         }
 
