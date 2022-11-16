@@ -216,5 +216,13 @@ namespace BanVeMayBay
         {
 
         }
+
+        private void dgvDSHangVe_CellClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+            txt_MaHangVe.Text = dgvDSHangVe.CurrentRow.Cells[0].Value.ToString();
+            cb_MaChuyenBay.Text = dgvDSHangVe.CurrentRow.Cells[1].Value.ToString();
+            txt_KhoiLuongHL.Text = dgvDSHangVe.CurrentRow.Cells[2].Value.ToString();
+            txt_DonGia.Text = dgvDSHangVe.CurrentRow.Cells[3].Value.ToString();
+        }
     }
 }

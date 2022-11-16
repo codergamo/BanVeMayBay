@@ -15,7 +15,7 @@ namespace DAO
         public SanBayDAO() : base() { }
         public void ThemSB(SanBay sb)
         {
-            const string sql = "ThemSanBay @MaSanBay, @TenSanBay, @ViTri";
+            const string sql = "ThemSanBay";
             SqlParameter[] sqlParameters = new SqlParameter[3];
             sqlParameters[0] = new SqlParameter("@MaSanBay", SqlDbType.VarChar);
             sqlParameters[0].Value = Convert.ToString(sb.MaSanBay);
@@ -28,7 +28,7 @@ namespace DAO
         }
         public void XoaSB(String maSB)
         {
-            const string sql = "XoaSanBay @MaSanBay";
+            const string sql = "XoaSanBay";
             SqlParameter[] sqlParameters = new SqlParameter[1];
             sqlParameters[0] = new SqlParameter("@MaSanBay", SqlDbType.VarChar);
             sqlParameters[0].Value = Convert.ToString(maSB);
@@ -37,7 +37,7 @@ namespace DAO
         }
         public void SuaSB(SanBay sb)
         {
-            const string sql = "SuaSanBay @MaSanBay, @TenSanBay, @ViTri";
+            const string sql = "SuaSanBay";
             SqlParameter[] sqlParameters = new SqlParameter[3];
             sqlParameters[0] = new SqlParameter("@MaSanBay", SqlDbType.VarChar);
             sqlParameters[0].Value = Convert.ToString(sb.MaSanBay);

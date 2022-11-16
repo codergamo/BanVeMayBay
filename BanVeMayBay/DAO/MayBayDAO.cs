@@ -14,11 +14,11 @@ namespace DAO
         public MayBayDAO() : base() { }
         public void ThemMB(MayBay mb)
         {
-            const string sql = "ThemMayBay @MaMayBay, @TenMayBay, @SoGhe";
+            const string sql = "ThemMayBay";
             SqlParameter[] sqlParameters = new SqlParameter[3];
             sqlParameters[0] = new SqlParameter("@MaMayBay", SqlDbType.VarChar);
             sqlParameters[0].Value = Convert.ToString(mb.Mamaybay);
-            sqlParameters[1] = new SqlParameter("@TenMayBay", SqlDbType.NVarChar);
+            sqlParameters[1] = new SqlParameter("@LoaiMayBay", SqlDbType.NVarChar);
             sqlParameters[1].Value = Convert.ToString(mb.Tenmaybay);
             sqlParameters[2] = new SqlParameter("@SoGhe", SqlDbType.Int);
             sqlParameters[2].Value = Convert.ToString(mb.Soghe);
@@ -27,7 +27,7 @@ namespace DAO
         }
         public void XoaMB(String maMB)
         {
-            const string sql = "XoaMayBay @MaMayBay";
+            const string sql = "XoaMayBay";
             SqlParameter[] sqlParameters = new SqlParameter[1];
             sqlParameters[0] = new SqlParameter("@MaMayBay", SqlDbType.VarChar);
             sqlParameters[0].Value = Convert.ToString(maMB);
@@ -36,11 +36,11 @@ namespace DAO
         }
         public void SuaMB(MayBay mb)
         {
-            const string sql = "SuaMayBay @MaMayBay, @TenMayBay, @SoGhe";
+            const string sql = "SuaMayBay";
             SqlParameter[] sqlParameters = new SqlParameter[3];
             sqlParameters[0] = new SqlParameter("@MaMayBay", SqlDbType.VarChar);
             sqlParameters[0].Value = Convert.ToString(mb.Mamaybay);
-            sqlParameters[1] = new SqlParameter("@TenMayBay", SqlDbType.NVarChar);
+            sqlParameters[1] = new SqlParameter("@LoaiMayBay", SqlDbType.NVarChar);
             sqlParameters[1].Value = Convert.ToString(mb.Tenmaybay);
             sqlParameters[2] = new SqlParameter("@SoGhe", SqlDbType.Int);
             sqlParameters[2].Value = Convert.ToString(mb.Soghe);
@@ -58,7 +58,6 @@ namespace DAO
             SqlParameter[] sqlParameters = new SqlParameter[1];
             sqlParameters[0] = new SqlParameter("@MaMayBay", SqlDbType.VarChar);
             sqlParameters[0].Value = Convert.ToString(maMB);
-
             return executeSearchQuery(sql, sqlParameters);
         }
     }

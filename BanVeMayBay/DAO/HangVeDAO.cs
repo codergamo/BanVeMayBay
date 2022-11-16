@@ -14,7 +14,7 @@ namespace DAO
         public HangVeDAO() : base() { }
         public void ThemHV(HangVe hv)
         {
-            const string sql = "ThemHangVe @MaChuyenBay, @HangVe, @KhoiLuongToiDa, @DonGia";
+            const string sql = "ThemHangVe";
             SqlParameter[] sqlParameters = new SqlParameter[4];
             sqlParameters[0] = new SqlParameter("@MaChuyenBay", SqlDbType.VarChar);
             sqlParameters[0].Value = Convert.ToString(hv.Machuyenbay);
@@ -29,7 +29,7 @@ namespace DAO
         }
         public void XoaHV(String maHV)
         {
-            const string sql = "XoaHangVe @MaHangVe";
+            const string sql = "XoaHangVe";
             SqlParameter[] sqlParameters = new SqlParameter[1];
             sqlParameters[0] = new SqlParameter("@MaHangVe", SqlDbType.VarChar);
             sqlParameters[0].Value = Convert.ToString(maHV);
@@ -38,7 +38,7 @@ namespace DAO
         }
         public void SuaHV(HangVe hv)
         {
-            const string sql = "SuaHangVe @MaHangVe, @KhoiLuongToiDa, @DonGia";
+            const string sql = "SuaHangVe";
             SqlParameter[] sqlParameters = new SqlParameter[3];
             sqlParameters[0] = new SqlParameter("@MaHangVe", SqlDbType.VarChar);
             sqlParameters[0].Value = Convert.ToString(hv.Mahangve);

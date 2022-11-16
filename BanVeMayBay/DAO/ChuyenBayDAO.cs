@@ -15,7 +15,7 @@ namespace DAO
 
         public void ThemCB(ChuyenBay cb)
         {
-            const string sql = "ThemChuyenBay @NgayBay, @GioKhoiHanh, @ThoiGianBay, @ThoiGianDen, @SoGheHang1, @SoGheHang2, @MaTuyenBay, @MaMayBay";
+            const string sql = "ThemChuyenBay";
             SqlParameter[] sqlParameters = new SqlParameter[8];
             sqlParameters[0] = new SqlParameter("@NgayBay", SqlDbType.Date);
             sqlParameters[0].Value = Convert.ToString(cb.Ngaybay);
@@ -25,9 +25,9 @@ namespace DAO
             sqlParameters[2].Value = Convert.ToString(cb.Thoigianbay);
             sqlParameters[3] = new SqlParameter("@ThoiGianDen", SqlDbType.Time);
             sqlParameters[3].Value = Convert.ToString(cb.Thoigianden);
-            sqlParameters[4] = new SqlParameter("@SoGheHang1", SqlDbType.Int);
+            sqlParameters[4] = new SqlParameter("@SoGheH1", SqlDbType.Int);
             sqlParameters[4].Value = Convert.ToString(cb.Soghehang1);
-            sqlParameters[5] = new SqlParameter("@SoGheHang2", SqlDbType.Int);
+            sqlParameters[5] = new SqlParameter("@SoGheH2", SqlDbType.Int);
             sqlParameters[5].Value = Convert.ToString(cb.Soghehang2);
             sqlParameters[6] = new SqlParameter("@MaTuyenBay", SqlDbType.VarChar);
             sqlParameters[6].Value = Convert.ToString(cb.Matuyenbay);
@@ -38,7 +38,7 @@ namespace DAO
         }
         public void XoaCB(String maCB)
         {
-            const string sql = "XoaChuyenBay @MaChuyenBay";
+            const string sql = "XoaChuyenBay";
             SqlParameter[] sqlParameters = new SqlParameter[1];
             sqlParameters[0] = new SqlParameter("@MaChuyenBay", SqlDbType.VarChar);
             sqlParameters[0].Value = Convert.ToString(maCB);
@@ -47,7 +47,7 @@ namespace DAO
         }
         public void SuaCB(ChuyenBay cb)
         {
-            const string sql = "SuaChuyenBay @MaChuyenBay, @ThoiGianBay, @ThoiGianDen, @SoGheHang1, @SoGheHang2, @MaMayBay";
+            const string sql = "SuaChuyenBay";
             SqlParameter[] sqlParameters = new SqlParameter[6];
             sqlParameters[0] = new SqlParameter("@MaChuyenBay", SqlDbType.VarChar);
             sqlParameters[0].Value = Convert.ToString(cb.Machuyenbay);
@@ -55,9 +55,9 @@ namespace DAO
             sqlParameters[1].Value = Convert.ToString(cb.Thoigianbay);
             sqlParameters[2] = new SqlParameter("@ThoiGianDen", SqlDbType.Time);
             sqlParameters[2].Value = Convert.ToString(cb.Thoigianden);
-            sqlParameters[3] = new SqlParameter("@SoGheHang1", SqlDbType.Int);
+            sqlParameters[3] = new SqlParameter("@SoGheH1", SqlDbType.Int);
             sqlParameters[3].Value = Convert.ToString(cb.Soghehang1);
-            sqlParameters[4] = new SqlParameter("@SoGheHang2", SqlDbType.Int);
+            sqlParameters[4] = new SqlParameter("@SoGheH2", SqlDbType.Int);
             sqlParameters[4].Value = Convert.ToString(cb.Soghehang2);
             sqlParameters[5] = new SqlParameter("@MaMayBay", SqlDbType.VarChar);
             sqlParameters[5].Value = Convert.ToString(cb.Mamaybay);

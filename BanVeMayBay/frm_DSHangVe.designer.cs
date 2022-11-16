@@ -198,6 +198,7 @@
             this.dgvDSHangVe.ThemeStyle.RowsStyle.Height = 24;
             this.dgvDSHangVe.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvDSHangVe.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dgvDSHangVe.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDSHangVe_CellClick_1);
             // 
             // pnl_ThongTinCB
             // 

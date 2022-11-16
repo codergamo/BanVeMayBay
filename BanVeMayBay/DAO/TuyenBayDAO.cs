@@ -16,31 +16,27 @@ namespace DAO
         {
             String sql;
             SqlParameter[] sqlParameters;
+            sql = "ThemTuyenBay";
+            sqlParameters = new SqlParameter[3];
+            sqlParameters[0] = new SqlParameter("@MaSanBayDi", SqlDbType.VarChar);
+            sqlParameters[0].Value = Convert.ToString(tb.Masanbaydi);
+            sqlParameters[1] = new SqlParameter("@MaSanBayDen", SqlDbType.VarChar);
+            sqlParameters[1].Value = Convert.ToString(tb.Masanbayden);
+            sqlParameters[2] = new SqlParameter("@MaSanBayTG", SqlDbType.VarChar);
+           
             if (tb.Masanbaytg != "")
             {
-                sql = "ThemTuyenBay @MaSanBayDi, @MaSanBayDen, @MaSanBayTG";
-                sqlParameters = new SqlParameter[3];
-                sqlParameters[0] = new SqlParameter("@MaSanBayDi", SqlDbType.VarChar);
-                sqlParameters[0].Value = Convert.ToString(tb.Masanbaydi);
-                sqlParameters[1] = new SqlParameter("@MaSanBayDen", SqlDbType.VarChar);
-                sqlParameters[1].Value = Convert.ToString(tb.Masanbayden);
-                sqlParameters[2] = new SqlParameter("@MaSanBayTG", SqlDbType.VarChar);
                 sqlParameters[2].Value = Convert.ToString(tb.Masanbaytg);
             }
             else
             {
-                sql = "ThemTuyenBay @MaSanBayDi, @MaSanBayDen, null";
-                sqlParameters = new SqlParameter[2];
-                sqlParameters[0] = new SqlParameter("@MaSanBayDi", SqlDbType.VarChar);
-                sqlParameters[0].Value = Convert.ToString(tb.Masanbaydi);
-                sqlParameters[1] = new SqlParameter("@MaSanBayDen", SqlDbType.VarChar);
-                sqlParameters[1].Value = Convert.ToString(tb.Masanbayden);
+                sqlParameters[2].Value = DBNull.Value;
             }
             executeInsertQuery(sql, sqlParameters);
         }
         public void XoaTB(String maTB)
         {
-            const string sql = "XoaTuyenBay @MaTuyenBay";
+            const string sql = "XoaTuyenBay";
             SqlParameter[] sqlParameters = new SqlParameter[1];
             sqlParameters[0] = new SqlParameter("@MaTuyenBay", SqlDbType.VarChar);
             sqlParameters[0].Value = Convert.ToString(maTB);
