@@ -44,8 +44,8 @@ namespace BanVeMayBay
 
             TaiKhoanBUS tkbus=new TaiKhoanBUS();
             tkbus.DMK(TK, txt_NewPassword.Text, txt_RetypePassword.Text);
+            showInformation();
             resettextbox();
-
         }
 
         private void guna2Panel1_Paint(object sender, PaintEventArgs e)
@@ -65,12 +65,12 @@ namespace BanVeMayBay
             TK.tenTK=txt_Username.Text;
 
             TaiKhoanBUS TKBUS=new TaiKhoanBUS();
-            DataTable dt=new DataTable();
-            TKBUS.SI(TK,dt);
-            lb_Username.Text = Convert.ToString(dt.Rows[0].ItemArray[0]);
-            lb_Password.Text = Convert.ToString(dt.Rows[0].ItemArray[1]);
-            lb_Role.Text = Convert.ToString(dt.Rows[0].ItemArray[2]);
-            lb_EmployeeName.Text = Convert.ToString(dt.Rows[0].ItemArray[3]);
+            DataTable dt1=new DataTable();
+            TKBUS.SI(TK,dt1);
+            lb_Username.Text = Convert.ToString(dt1.Rows[0].ItemArray[0]);
+            lb_Password.Text = Convert.ToString(dt1.Rows[0].ItemArray[1]);
+            lb_Role.Text = Convert.ToString(dt1.Rows[0].ItemArray[2]);
+            lb_EmployeeName.Text = Convert.ToString(dt1.Rows[0].ItemArray[3]);
 
         }
 
