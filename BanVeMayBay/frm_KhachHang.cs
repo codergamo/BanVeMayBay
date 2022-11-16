@@ -109,7 +109,6 @@ namespace BanVeMayBay
             KhachHangBUS khachHangBUS = new KhachHangBUS();
             dgvKH.DataSource = khachHangBUS.Search(txt_Search.Text);
         }
-
         private void btn_TimKiem_Click_1(object sender, EventArgs e)
         {
             Clear();

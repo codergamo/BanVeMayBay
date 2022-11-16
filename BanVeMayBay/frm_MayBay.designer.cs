@@ -44,6 +44,7 @@
             this.dgvMB = new Guna.UI2.WinForms.Guna2DataGridView();
             this.pnl_ThongTinCB = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.btn_TimKiem = new Guna.UI2.WinForms.Guna2Button();
+            this.txt_TimKiemMaMB = new Guna.UI2.WinForms.Guna2TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMB)).BeginInit();
             this.pnl_ThongTinCB.SuspendLayout();
             this.SuspendLayout();
@@ -176,12 +177,13 @@
             this.btn_Them.ForeColor = System.Drawing.Color.Black;
             this.btn_Them.Image = global::BanVeMayBay.Properties.Resources.add;
             this.btn_Them.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_Them.Location = new System.Drawing.Point(3, 236);
+            this.btn_Them.Location = new System.Drawing.Point(12, 236);
             this.btn_Them.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_Them.Name = "btn_Them";
             this.btn_Them.Size = new System.Drawing.Size(180, 46);
             this.btn_Them.TabIndex = 27;
             this.btn_Them.Text = "Thêm";
+            this.btn_Them.Click += new System.EventHandler(this.btn_Them_Click);
             // 
             // btn_Xoa
             // 
@@ -195,12 +197,13 @@
             this.btn_Xoa.ForeColor = System.Drawing.Color.Black;
             this.btn_Xoa.Image = global::BanVeMayBay.Properties.Resources.trash;
             this.btn_Xoa.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_Xoa.Location = new System.Drawing.Point(190, 236);
+            this.btn_Xoa.Location = new System.Drawing.Point(199, 236);
             this.btn_Xoa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_Xoa.Name = "btn_Xoa";
             this.btn_Xoa.Size = new System.Drawing.Size(180, 46);
             this.btn_Xoa.TabIndex = 28;
             this.btn_Xoa.Text = "Xóa";
+            this.btn_Xoa.Click += new System.EventHandler(this.btn_Xoa_Click);
             // 
             // btn_Sua
             // 
@@ -214,12 +217,13 @@
             this.btn_Sua.ForeColor = System.Drawing.Color.Black;
             this.btn_Sua.Image = global::BanVeMayBay.Properties.Resources.pencil;
             this.btn_Sua.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_Sua.Location = new System.Drawing.Point(377, 236);
+            this.btn_Sua.Location = new System.Drawing.Point(386, 236);
             this.btn_Sua.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_Sua.Name = "btn_Sua";
             this.btn_Sua.Size = new System.Drawing.Size(180, 46);
             this.btn_Sua.TabIndex = 29;
             this.btn_Sua.Text = "Sửa";
+            this.btn_Sua.Click += new System.EventHandler(this.btn_Sua_Click);
             // 
             // dgvMB
             // 
@@ -274,6 +278,7 @@
             this.dgvMB.ThemeStyle.RowsStyle.Height = 24;
             this.dgvMB.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvMB.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dgvMB.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvMB_CellClick);
             // 
             // pnl_ThongTinCB
             // 
@@ -284,7 +289,7 @@
             this.pnl_ThongTinCB.Controls.Add(this.txt_MaMayBay);
             this.pnl_ThongTinCB.Controls.Add(this.label2);
             this.pnl_ThongTinCB.Controls.Add(this.label1);
-            this.pnl_ThongTinCB.Location = new System.Drawing.Point(3, 11);
+            this.pnl_ThongTinCB.Location = new System.Drawing.Point(12, 11);
             this.pnl_ThongTinCB.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnl_ThongTinCB.Name = "pnl_ThongTinCB";
             this.pnl_ThongTinCB.Size = new System.Drawing.Size(541, 202);
@@ -302,18 +307,44 @@
             this.btn_TimKiem.ForeColor = System.Drawing.Color.Black;
             this.btn_TimKiem.Image = global::BanVeMayBay.Properties.Resources.search;
             this.btn_TimKiem.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_TimKiem.Location = new System.Drawing.Point(3, 299);
+            this.btn_TimKiem.Location = new System.Drawing.Point(386, 299);
             this.btn_TimKiem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_TimKiem.Name = "btn_TimKiem";
             this.btn_TimKiem.Size = new System.Drawing.Size(180, 46);
             this.btn_TimKiem.TabIndex = 30;
             this.btn_TimKiem.Text = "Tìm kiếm";
+            this.btn_TimKiem.Click += new System.EventHandler(this.btn_TimKiem_Click);
+            // 
+            // txt_TimKiemMaMB
+            // 
+            this.txt_TimKiemMaMB.AutoRoundedCorners = true;
+            this.txt_TimKiemMaMB.BorderColor = System.Drawing.Color.Black;
+            this.txt_TimKiemMaMB.BorderRadius = 22;
+            this.txt_TimKiemMaMB.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_TimKiemMaMB.DefaultText = "";
+            this.txt_TimKiemMaMB.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_TimKiemMaMB.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_TimKiemMaMB.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_TimKiemMaMB.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_TimKiemMaMB.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_TimKiemMaMB.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_TimKiemMaMB.ForeColor = System.Drawing.Color.Black;
+            this.txt_TimKiemMaMB.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_TimKiemMaMB.Location = new System.Drawing.Point(12, 299);
+            this.txt_TimKiemMaMB.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txt_TimKiemMaMB.Name = "txt_TimKiemMaMB";
+            this.txt_TimKiemMaMB.PasswordChar = '\0';
+            this.txt_TimKiemMaMB.PlaceholderText = "";
+            this.txt_TimKiemMaMB.SelectedText = "";
+            this.txt_TimKiemMaMB.Size = new System.Drawing.Size(358, 46);
+            this.txt_TimKiemMaMB.TabIndex = 35;
             // 
             // frm_MayBay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1772, 745);
+            this.Controls.Add(this.txt_TimKiemMaMB);
             this.Controls.Add(this.btn_Them);
             this.Controls.Add(this.btn_Xoa);
             this.Controls.Add(this.btn_Sua);
@@ -322,6 +353,7 @@
             this.Controls.Add(this.btn_TimKiem);
             this.Name = "frm_MayBay";
             this.Text = "frm_MayBay";
+            this.Load += new System.EventHandler(this.frm_MayBay_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvMB)).EndInit();
             this.pnl_ThongTinCB.ResumeLayout(false);
             this.pnl_ThongTinCB.PerformLayout();
@@ -344,5 +376,6 @@
         private Guna.UI2.WinForms.Guna2DataGridView dgvMB;
         private Guna.UI2.WinForms.Guna2CustomGradientPanel pnl_ThongTinCB;
         private Guna.UI2.WinForms.Guna2Button btn_TimKiem;
+        private Guna.UI2.WinForms.Guna2TextBox txt_TimKiemMaMB;
     }
 }
