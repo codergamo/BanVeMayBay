@@ -194,5 +194,27 @@ namespace DAO
 
             }
         }
+        public void executeXemPhieuDatChoQuery(string query,DataTable dt)
+        {
+            using (SqlCommand sqlCommand = new SqlCommand(query, openConnection()))
+            {
+                try
+                {
+                    sqlCommand.CommandType = CommandType.StoredProcedure;
+                    SqlDataAdapter da = new SqlDataAdapter(sqlCommand);
+                    da.Fill(dt);
+                    sqlCommand.ExecuteNonQuery();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                finally
+                {
+                    connection.Close();
+                }
+
+            }
+        }
 
     }}

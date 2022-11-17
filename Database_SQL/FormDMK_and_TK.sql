@@ -1,4 +1,5 @@
 ﻿use QUANLYCHUYENBAY
+--form đổi mật khẩu
 go
 create procedure DOIMATKHAU 
 @tenTaiKhoan char(20),@matKhau char(20),@matKhauMoi char(20),@matKhauMoiNL char(20)
@@ -28,7 +29,7 @@ begin
 		end
 	end
 end
-
+--Hiển thị thông tin tài khoản ở form DMK
 go
 create procedure SHOWINFORMATION
 @tenTaiKhoan char(20)
@@ -37,10 +38,17 @@ as
 		select TAIKHOAN.TenTaiKhoan,TAIKHOAN.MatKhau,TAIKHOAN.PHANLOAI,NHANVIEN.TenNV FROM NHANVIEN FULL OUTER JOIN
  TAIKHOAN on NHANVIEN.MaNV=TAIKHOAN.ID_NhanVien where TAIKHOAN.TenTaiKhoan=@tenTaiKhoan 
 	end
+--Form thống kê
 go
 CREATE PROC THONGKE
 @d1 datetime, @d2 datetime
 as
 begin
 	select NgayLap,sum(ThanhTien) AS TongTien from HOADON where NgayLap>=@d1 and NgayLap<=@d2 group by NgayLap
+end
+--Hàm show phiếu đặt chỗ
+CREATE PROC XemPhieuDatCho
+as
+begin
+	select MaPhieu,ThoiGianDat,SoGhe,HangGhe,CHUYENBAY_MaChuyenBay as MaCB,KHACHHANG_CMND as CMND,MAHANGVE as MaHangVe from PHIEUDATCHO
 end

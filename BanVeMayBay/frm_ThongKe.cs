@@ -31,12 +31,12 @@ namespace BanVeMayBay
             hdbus.ThongKe(d1, d2,dt);
             guna2DataGridView1.DataSource = dt;
             chart1.DataSource = dt;
-            chart1.ChartAreas["ChartArea1"].AxisX.Title = "NgayLap";
-            chart1.ChartAreas["ChartArea1"].AxisY.Title = "TongTien";
+            chart1.Titles.Clear();
             chart1.Series[0].XValueMember = "Ngaylap";
             chart1.Series[0].YValueMembers = "TongTien";
             chart1.Series[0].XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Date;
             chart1.DataBind();
+            chart1.Titles.Add("Biểu đồ doanh thu");
         }
     }
 }

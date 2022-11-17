@@ -57,6 +57,7 @@
     <Compile Include="BUS\KhachHangBUS.cs" />
     <Compile Include="BUS\MayBayBUS.cs" />
     <Compile Include="BUS\NhanVienBUS.cs" />
+    <Compile Include="BUS\PhieuDatChoBUS.cs" />
     <Compile Include="BUS\SanBayBUS.cs" />
     <Compile Include="BUS\TaiKhoanBUS.cs" />
     <Compile Include="BUS\TuyenBayBUS.cs" />
@@ -67,6 +68,7 @@
     <Compile Include="DAO\KhachHangDAO.cs" />
     <Compile Include="DAO\MayBayDAO.cs" />
     <Compile Include="DAO\NhanVienDAO.cs" />
+    <Compile Include="DAO\PhieuDatChoDAO.cs" />
     <Compile Include="DAO\SanBayDAO.cs" />
     <Compile Include="DAO\TaiKhoanDAO.cs" />
     <Compile Include="DAO\TuyenBayDAO.cs" />
@@ -76,6 +78,7 @@
     <Compile Include="DTO\KhachHang.cs" />
     <Compile Include="DTO\MayBay.cs" />
     <Compile Include="DTO\NhanVien.cs" />
+    <Compile Include="DTO\PhieuDatCho.cs" />
     <Compile Include="DTO\SanBay.cs" />
     <Compile Include="DTO\TaiKhoan.cs" />
     <Compile Include="DTO\TuyenBay.cs" />

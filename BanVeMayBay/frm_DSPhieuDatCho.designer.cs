@@ -113,13 +113,13 @@
             this.dgvDanhSachPDC.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvDanhSachPDC.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.dgvDanhSachPDC.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgvDanhSachPDC.Location = new System.Drawing.Point(0, 29);
+            this.dgvDanhSachPDC.Location = new System.Drawing.Point(0, 2);
             this.dgvDanhSachPDC.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvDanhSachPDC.Name = "dgvDanhSachPDC";
             this.dgvDanhSachPDC.RowHeadersVisible = false;
             this.dgvDanhSachPDC.RowHeadersWidth = 51;
             this.dgvDanhSachPDC.RowTemplate.Height = 24;
-            this.dgvDanhSachPDC.Size = new System.Drawing.Size(1187, 863);
+            this.dgvDanhSachPDC.Size = new System.Drawing.Size(1187, 890);
             this.dgvDanhSachPDC.TabIndex = 0;
             this.dgvDanhSachPDC.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvDanhSachPDC.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -532,6 +532,7 @@
             this.Controls.Add(this.btn_Xoa);
             this.Name = "frm_DSPhieuDatCho";
             this.Text = "frm_DSPhieuDatCho";
+            this.Load += new System.EventHandler(this.frm_DSPhieuDatCho_Load);
             this.guna2Panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDanhSachPDC)).EndInit();
             this.pnl_ThongTinKH.ResumeLayout(false);
