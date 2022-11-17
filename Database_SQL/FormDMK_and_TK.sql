@@ -37,3 +37,10 @@ as
 		select TAIKHOAN.TenTaiKhoan,TAIKHOAN.MatKhau,TAIKHOAN.PHANLOAI,NHANVIEN.TenNV FROM NHANVIEN FULL OUTER JOIN
  TAIKHOAN on NHANVIEN.MaNV=TAIKHOAN.ID_NhanVien where TAIKHOAN.TenTaiKhoan=@tenTaiKhoan 
 	end
+go
+CREATE PROC THONGKE
+@d1 datetime, @d2 datetime
+as
+begin
+	select NgayLap,sum(ThanhTien) AS TongTien from HOADON where NgayLap>=@d1 and NgayLap<=@d2 group by NgayLap
+end

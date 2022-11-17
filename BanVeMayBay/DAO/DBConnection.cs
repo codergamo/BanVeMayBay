@@ -171,5 +171,28 @@ namespace DAO
 
             }
         }
+        public void executeThongKeQuery(String query, SqlParameter[] sqlParameter, DataTable dt)
+        {
+            using (SqlCommand sqlCommand = new SqlCommand(query, openConnection()))
+            {
+                try
+                {
+                    sqlCommand.CommandType = CommandType.StoredProcedure;
+                    sqlCommand.Parameters.AddRange(sqlParameter);
+                    SqlDataAdapter da = new SqlDataAdapter(sqlCommand);
+                    da.Fill(dt);
+                    sqlCommand.ExecuteNonQuery();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                finally
+                {
+                    connection.Close();
+                }
+
+            }
+        }
 
     }}

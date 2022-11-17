@@ -17,5 +17,9 @@ namespace BUS
         {
             hdDAO = new HoaDonDAO();
         }
+        public void ThongKe(DateTime d1, DateTime d2, DataTable dt)
+        {
+            hdDAO.ThongKe(d1, d2,dt);
+        }
     }
 }
